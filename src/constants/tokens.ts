@@ -1,4 +1,5 @@
-import { WETH9, Token, Ether } from '@uniswap/sdk-core'
+import { WETH9, Token, Ether, NativeCurrency, Currency } from '@uniswap/sdk-core'
+import invariant from 'tiny-invariant'
 import { UNI_ADDRESS } from './addresses'
 import { SupportedChainId } from './chains'
 
@@ -154,6 +155,28 @@ export const WETH9_EXTENDED: { [chainId: number]: Token } = {
   ),
 }
 
+function isClv(chainId: number) {
+  return chainId === SupportedChainId.CLV
+}
+
+class CLVNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isClv(this.chainId)) throw new Error('Not CLV')
+    const wrapped = WETH9_EXTENDED[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isClv(chainId)) throw new Error('Not CLV')
+    super(chainId, 18, 'CLV', 'CLV')
+  }
+}
+
 export class ExtendedEther extends Ether {
   public get wrapped(): Token {
     if (this.chainId in WETH9_EXTENDED) return WETH9_EXTENDED[this.chainId]
@@ -163,6 +186,17 @@ export class ExtendedEther extends Ether {
   private static _cachedEther: { [chainId: number]: ExtendedEther } = {}
 
   public static onChain(chainId: number): ExtendedEther {
-    return this._cachedEther[chainId] ?? (this._cachedEther[chainId] = new ExtendedEther(chainId))
+    if (this._cachedEther[chainId]) {
+      return this._cachedEther[chainId]
+    }
+
+    let nativeCurrency: NativeCurrency
+    if (isClv(chainId)) {
+      nativeCurrency = new CLVNativeCurrency(chainId)
+    } else {
+      nativeCurrency = new ExtendedEther(chainId)
+    }
+    this._cachedEther[chainId] = nativeCurrency
+    return nativeCurrency
   }
 }
