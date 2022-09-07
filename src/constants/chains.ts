@@ -1,6 +1,5 @@
 import arbitrumLogoUrl from 'assets/svg/arbitrum_logo.svg'
 import optimismLogoUrl from 'assets/svg/optimism_logo.svg'
-import clvLogoUrl from 'assets/images/clover_brand.svg'
 import ms from 'ms.macro'
 
 export enum SupportedChainId {
