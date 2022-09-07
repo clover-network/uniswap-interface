@@ -13,6 +13,7 @@ export enum SupportedChainId {
   ARBITRUM_RINKEBY = 421611,
   OPTIMISM = 10,
   OPTIMISTIC_KOVAN = 69,
+  CLV = 1024,
 }
 
 export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = [
@@ -26,6 +27,7 @@ export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = [
   SupportedChainId.ARBITRUM_RINKEBY,
   SupportedChainId.OPTIMISM,
   SupportedChainId.OPTIMISTIC_KOVAN,
+  SupportedChainId.CLV,
 ]
 
 export const L1_CHAIN_IDS = [
@@ -34,6 +36,7 @@ export const L1_CHAIN_IDS = [
   SupportedChainId.RINKEBY,
   SupportedChainId.GOERLI,
   SupportedChainId.KOVAN,
+  SupportedChainId.CLV,
 ] as const
 
 export type SupportedL1ChainId = typeof L1_CHAIN_IDS[number]
@@ -66,6 +69,12 @@ type ChainInfo = { readonly [chainId: number]: L1ChainInfo | L2ChainInfo } & {
   { readonly [chainId in SupportedL1ChainId]: L1ChainInfo }
 
 export const CHAIN_INFO: ChainInfo = {
+  [SupportedChainId.CLV]: {
+    docs: 'https://docs.clv.org/',
+    explorer: 'https://clvscan.io/',
+    infoLink: 'https://info.clv.org/#/',
+    label: 'CLV',
+  },
   [SupportedChainId.ARBITRUM_ONE]: {
     blockWaitMsBeforeWarning: ms`10m`,
     bridge: 'https://bridge.arbitrum.io/',

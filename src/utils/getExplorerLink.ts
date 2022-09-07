@@ -17,6 +17,10 @@ export enum ExplorerDataType {
   BLOCK = 'block',
 }
 
+function isClv(chainId: number) {
+  return chainId === SupportedChainId.CLV
+}
+
 /**
  * Return the explorer link for the given data and data type
  * @param chainId the ID of the chain for which to return the data
@@ -52,7 +56,7 @@ export function getExplorerLink(chainId: number, data: string, type: ExplorerDat
     }
   }
 
-  const prefix = `https://${ETHERSCAN_PREFIXES[chainId] ?? ''}etherscan.io`
+  const prefix = isClv(chainId) ? 'https://clvscan.com' : `https://${ETHERSCAN_PREFIXES[chainId] ?? ''}etherscan.io`
 
   switch (type) {
     case ExplorerDataType.TRANSACTION:

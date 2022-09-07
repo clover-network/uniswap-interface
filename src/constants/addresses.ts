@@ -11,9 +11,20 @@ export const MULTICALL_ADDRESS: AddressMap = {
   [SupportedChainId.OPTIMISM]: '0x90f872b3d8f33f305e0250db6A2761B354f7710A',
   [SupportedChainId.ARBITRUM_ONE]: '0xadF885960B47eA2CD9B55E6DAc6B42b7Cb2806dB',
   [SupportedChainId.ARBITRUM_RINKEBY]: '0xa501c031958F579dB7676fF1CE78AD305794d579',
+  [SupportedChainId.CLV]: '0xb6903e5f6e5e4fdde37bd51ff5ec6efe7f859f36',
 }
-export const V2_FACTORY_ADDRESSES: AddressMap = constructSameAddressMap(V2_FACTORY_ADDRESS)
-export const V2_ROUTER_ADDRESS: AddressMap = constructSameAddressMap('0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D')
+export const CLV_FACTORY_ADDRESS = '0x488c6033484621828573225b8f294e6126ebd36b'
+
+export const V2_FACTORY_ADDRESSES: AddressMap = {
+  ...constructSameAddressMap(V2_FACTORY_ADDRESS),
+  [SupportedChainId.CLV]: CLV_FACTORY_ADDRESS,
+}
+
+export const CLV_ROUTER_ADDRESS = '0x7Dd4DdA4Ec7344De16fde4f0C08c95F038E99E96'
+export const V2_ROUTER_ADDRESS: AddressMap = {
+  ...constructSameAddressMap('0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D'),
+  [SupportedChainId.CLV]: CLV_ROUTER_ADDRESS,
+}
 
 /**
  * The oldest V0 governance address

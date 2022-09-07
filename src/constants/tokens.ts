@@ -145,6 +145,13 @@ export const WETH9_EXTENDED: { [chainId: number]: Token } = {
     'WETH',
     'Wrapped Ether'
   ),
+  [SupportedChainId.CLV]: new Token(
+    SupportedChainId.CLV,
+    '0x1376C97C5c512d2d6F9173A9A3A016B6140b4536',
+    18,
+    'WCLV',
+    'Wrapped CLV'
+  ),
 }
 
 export class ExtendedEther extends Ether {
