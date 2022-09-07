@@ -37,7 +37,7 @@ import { useERC20PermitFromTrade, UseERC20PermitState } from '../../hooks/useERC
 import useIsArgentWallet from '../../hooks/useIsArgentWallet'
 import { useIsSwapUnsupported } from '../../hooks/useIsSwapUnsupported'
 import { useSwapCallback } from '../../hooks/useSwapCallback'
-import useToggledVersion, { Version } from '../../hooks/useToggledVersion'
+import { Version } from '../../hooks/useToggledVersion'
 import { useUSDCValue } from '../../hooks/useUSDCPrice'
 import useWrapCallback, { WrapType } from '../../hooks/useWrapCallback'
 import { useActiveWeb3React } from '../../hooks/web3'
@@ -103,7 +103,7 @@ export default function Swap({ history }: RouteComponentProps) {
   const [isExpertMode] = useExpertModeManager()
 
   // get version from the url
-  const toggledVersion = useToggledVersion()
+  const toggledVersion = Version.v2 as unknown as Version // useToggledVersion()
 
   // swap state
   const { independentField, typedValue, recipient } = useSwapState()
