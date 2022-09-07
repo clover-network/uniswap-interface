@@ -31,7 +31,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - uses: ./.github/actions/setup
-      - run: yarn prepare
       - run: yarn build
 
       - name: Setup Pages
