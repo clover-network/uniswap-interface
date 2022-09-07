@@ -1,7 +1,9 @@
 import { Currency } from '@uniswap/sdk-core'
+import { ExtendedEther, isClv } from 'constants/tokens'
 import React, { useMemo } from 'react'
 import styled from 'styled-components/macro'
 import EthereumLogo from '../../assets/images/CLV_token.svg'
+import ClvTokenLogo from '../../assets/images/CLV_token.svg'
 import useHttpLocations from '../../hooks/useHttpLocations'
 import { WrappedTokenInfo } from '../../state/lists/wrappedTokenInfo'
 import Logo from '../Logo'
@@ -39,7 +41,11 @@ export default function CurrencyLogo({
   const srcs: string[] = useMemo(() => {
     if (!currency || currency.isNative) return []
 
-    if (currency.isToken) {
+    if (isClv(currency.chainId)) {
+      if (currency.address === ExtendedEther.onChain(currency.chainId).wrapped.address) {
+        return [ClvTokenLogo]
+      }
+    } else if (currency.isToken) {
       const defaultUrls = currency.chainId === 1 ? [getTokenLogoURL(currency.address)] : []
       if (currency instanceof WrappedTokenInfo) {
         return [...uriLocations, ...defaultUrls]

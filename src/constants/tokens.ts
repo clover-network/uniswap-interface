@@ -155,7 +155,7 @@ export const WETH9_EXTENDED: { [chainId: number]: Token } = {
   ),
 }
 
-function isClv(chainId: number) {
+export function isClv(chainId: number) {
   return chainId === SupportedChainId.CLV
 }
 
