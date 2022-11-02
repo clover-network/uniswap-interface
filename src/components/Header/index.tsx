@@ -85,9 +85,10 @@ const HeaderElement = styled.div`
 const HeaderLinks = styled(Row)`
   justify-self: center;
   background-color: ${({ theme }) => theme.bg0};
+  border: 1px solid ${({ theme }) => theme.bg3};
   width: fit-content;
-  padding: 4px;
-  border-radius: 16px;
+  padding: 2px;
+  border-radius: 10px;
   display: grid;
   grid-auto-flow: column;
   grid-gap: 10px;
@@ -185,7 +186,7 @@ const StyledNavLink = styled(NavLink).attrs({
 })`
   ${({ theme }) => theme.flexRowNoWrap}
   align-items: left;
-  border-radius: 3rem;
+  border-radius: 8px;
   outline: none;
   cursor: pointer;
   text-decoration: none;
@@ -197,7 +198,7 @@ const StyledNavLink = styled(NavLink).attrs({
   overflow: hidden;
   white-space: nowrap;
   &.${activeClassName} {
-    border-radius: 12px;
+    border-radius: 8px;
     font-weight: 600;
     justify-content: center;
     color: ${({ theme }) => theme.text1};
@@ -264,7 +265,7 @@ export default function Header() {
       </Modal>
       <Title href=".">
         <UniIcon>
-          <img width={'24px'} src={darkMode ? LogoDark : Logo} alt="logo" />
+          <img width={darkMode ? '208px' : '24px'} src={darkMode ? LogoDark : Logo} alt="logo" />
         </UniIcon>
       </Title>
       <HeaderLinks>
@@ -289,10 +290,10 @@ export default function Header() {
             <Trans>Vote</Trans>
           </StyledNavLink>
         )}
-        <StyledExternalLink id={`charts-nav-link`} href={infoLink}>
-          <Trans>Charts</Trans>
-          <sup>↗</sup>
-        </StyledExternalLink>
+        {/*<StyledExternalLink id={`charts-nav-link`} href={infoLink}>*/}
+        {/*  <Trans>Charts</Trans>*/}
+        {/*  <sup>↗</sup>*/}
+        {/*</StyledExternalLink>*/}
       </HeaderLinks>
 
       <HeaderControls>

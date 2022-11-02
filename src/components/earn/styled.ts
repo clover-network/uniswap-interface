@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro'
 import { AutoColumn } from '../Column'
 
-import uImage from '../../assets/images/big_unicorn.png'
+import uImage from '../../assets/images/big_unicorn.svg'
 import xlUnicorn from '../../assets/images/xl_uni.png'
 import noise from '../../assets/images/noise.png'
 

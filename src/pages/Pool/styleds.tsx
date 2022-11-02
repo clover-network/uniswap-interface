@@ -3,7 +3,12 @@ import styled, { keyframes } from 'styled-components/macro'
 
 export const Wrapper = styled.div`
   position: relative;
-  padding: 20px;
+  padding: 16px;
+  background: ${({ theme }) => theme.bg7};
+  border: 1px solid ${({ theme }) => theme.bg3};
+  box-shadow: 0px 17px 29px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  margin-top: 26px;
 `
 
 export const ClickableText = styled(Text)`

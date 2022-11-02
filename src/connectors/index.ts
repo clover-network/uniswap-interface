@@ -5,6 +5,7 @@ import { PortisConnector } from '@web3-react/portis-connector'
 import { WalletConnectConnector } from '@web3-react/walletconnect-connector'
 import { WalletLinkConnector } from '@web3-react/walletlink-connector'
 import UNISWAP_LOGO_URL from '../assets/svg/logo.svg'
+import ClvParaIcon from '../assets/svg/clover_para.svg'
 import { ALL_SUPPORTED_CHAIN_IDS, SupportedChainId } from '../constants/chains'
 import getLibrary from '../utils/getLibrary'
 import { FortmaticConnector } from './Fortmatic'
@@ -18,7 +19,7 @@ if (typeof INFURA_KEY === 'undefined') {
   throw new Error(`REACT_APP_INFURA_KEY must be a defined environment variable`)
 }
 
-const NETWORK_URLS: { [key in SupportedChainId]: string } = {
+export const NETWORK_URLS: { [key in SupportedChainId]: string } = {
   [SupportedChainId.MAINNET]: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
   [SupportedChainId.RINKEBY]: `https://rinkeby.infura.io/v3/${INFURA_KEY}`,
   [SupportedChainId.ROPSTEN]: `https://ropsten.infura.io/v3/${INFURA_KEY}`,
@@ -28,7 +29,7 @@ const NETWORK_URLS: { [key in SupportedChainId]: string } = {
   [SupportedChainId.OPTIMISTIC_KOVAN]: `https://optimism-kovan.infura.io/v3/${INFURA_KEY}`,
   [SupportedChainId.ARBITRUM_ONE]: `https://arbitrum-mainnet.infura.io/v3/${INFURA_KEY}`,
   [SupportedChainId.ARBITRUM_RINKEBY]: `https://arbitrum-rinkeby.infura.io/v3/${INFURA_KEY}`,
-  [SupportedChainId.CLV]: `https://arbitrum-rinkeby.infura.io/v3/${INFURA_KEY}`,
+  [SupportedChainId.CLV]: `https://api-para.clover.finance`,
 }
 
 export const network = new NetworkConnector({
@@ -71,3 +72,59 @@ export const walletlink = new WalletLinkConnector({
   appName: 'Uniswap',
   appLogoUrl: UNISWAP_LOGO_URL,
 })
+
+export const CLOVER_PARACHAIN_NETWORK_EVM = {
+  type: 'rpc',
+  icon: ClvParaIcon,
+  rpcUrl: 'https://api-para.clover.finance',
+  chainId: '0x400',
+  nickname: 'CLV P-Chain',
+  ticker: 'CLV',
+  paraId: 2002,
+}
+
+export const addWalletNetwork = async (provider: any, fromChain: any) => {
+  if (fromChain?.chainId && provider) {
+    try {
+      await provider.request({
+        method: 'wallet_addEthereumChain',
+        params: [
+          {
+            chainId: fromChain?.chainId,
+            chainName: fromChain?.nickname,
+            nativeCurrency: {
+              name: fromChain?.ticker,
+              symbol: fromChain?.ticker,
+              decimals: 18,
+            },
+            rpcUrls: [fromChain?.rpcUrl],
+          },
+        ],
+      })
+      return true
+    } catch (e) {
+      return false
+    }
+  } else {
+    return true
+  }
+}
+
+export const changeWalletNetwork = async (provider: any, fromChain: any) => {
+  if (fromChain?.chainId && provider) {
+    try {
+      await provider.request({
+        method: 'wallet_switchEthereumChain',
+        params: [{ chainId: fromChain?.chainId }],
+      })
+      return true
+    } catch (error: any) {
+      if (error.code === 4902) {
+        return await addWalletNetwork(provider, fromChain)
+      }
+      return false
+    }
+  } else {
+    return true
+  }
+}

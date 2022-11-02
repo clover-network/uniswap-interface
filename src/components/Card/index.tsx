@@ -41,7 +41,7 @@ export const YellowCard = styled(Card)`
 `
 
 export const BlueCard = styled(Card)`
-  background-color: ${({ theme }) => theme.primary5};
-  color: ${({ theme }) => theme.blue2};
+  background-color: ${({ theme }) => theme.bg9};
+  color: ${({ theme }) => theme.primaryText2};
   border-radius: 12px;
 `

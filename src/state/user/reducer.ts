@@ -70,8 +70,8 @@ function pairKey(token0Address: string, token1Address: string) {
 
 export const initialState: UserState = {
   arbitrumAlphaAcknowledged: false,
-  userDarkMode: null,
-  matchesDarkMode: false,
+  userDarkMode: true,
+  matchesDarkMode: true,
   userExpertMode: false,
   userLocale: null,
   userSingleHopOnly: false,

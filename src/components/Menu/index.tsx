@@ -268,10 +268,10 @@ export default function Menu() {
                     </div>
                     <Globe opacity={0.6} size={16} />
                   </ToggleMenuItem>
-                  <ToggleMenuItem onClick={() => toggleDarkMode()}>
-                    <div>{darkMode ? <Trans>Light Theme</Trans> : <Trans>Dark Theme</Trans>}</div>
-                    {darkMode ? <Moon opacity={0.6} size={16} /> : <Sun opacity={0.6} size={16} />}
-                  </ToggleMenuItem>
+                  {/*<ToggleMenuItem onClick={() => toggleDarkMode()}>*/}
+                  {/*  <div>{darkMode ? <Trans>Light Theme</Trans> : <Trans>Dark Theme</Trans>}</div>*/}
+                  {/*  {darkMode ? <Moon opacity={0.6} size={16} /> : <Sun opacity={0.6} size={16} />}*/}
+                  {/*</ToggleMenuItem>*/}
                   {showUNIClaimOption && (
                     <UNIbutton
                       onClick={openClaimModal}

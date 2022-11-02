@@ -8,11 +8,15 @@ import { AutoColumn } from '../Column'
 
 export const Wrapper = styled.div`
   position: relative;
-  padding: 8px;
+  padding: 16px;
+  background-color: ${({ theme }) => theme.bg7};
+  box-shadow: 0px 17px 29px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  margin-top: 24px;
+  border: 1px solid ${({ theme }) => theme.bg3};
 `
 
 export const ArrowWrapper = styled.div<{ clickable: boolean }>`
-  padding: 4px;
   border-radius: 12px;
   height: 32px;
   width: 32px;
@@ -22,7 +26,6 @@ export const ArrowWrapper = styled.div<{ clickable: boolean }>`
   left: calc(50% - 16px);
   /* transform: rotate(90deg); */
   background-color: ${({ theme }) => theme.bg1};
-  border: 4px solid ${({ theme }) => theme.bg0};
   z-index: 2;
   ${({ clickable }) =>
     clickable

@@ -10,7 +10,7 @@ import { RowBetween, RowFixed } from '../Row'
 import { AlertCircle, AlertTriangle, ArrowUpCircle, CheckCircle } from 'react-feather'
 import { ButtonPrimary, ButtonLight } from '../Button'
 import { AutoColumn, ColumnCenter } from '../Column'
-import Circle from '../../assets/images/blue-loader.svg'
+import Circle from '../../assets/images/green-loader.svg'
 import MetaMaskLogo from '../../assets/images/metamask.png'
 import { useActiveWeb3React } from '../../hooks/web3'
 import useAddTokenToMetamask from 'hooks/useAddTokenToMetamask'
@@ -23,6 +23,10 @@ import AnimatedConfirmation from './AnimatedConfirmation'
 const Wrapper = styled.div`
   width: 100%;
   padding: 1rem;
+`
+const Header = styled(RowBetween)`
+  padding: 6px 24px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 `
 const Section = styled(AutoColumn)<{ inline?: boolean }>`
   padding: ${({ inline }) => (inline ? '0' : '0')};
@@ -56,18 +60,18 @@ function ConfirmationPendingContent({
     <Wrapper>
       <AutoColumn gap="md">
         {!inline && (
-          <RowBetween>
+          <Header>
             <div />
+            <Text fontWeight={500} fontSize={24} textAlign="center">
+              <Trans>Waiting For Confirm</Trans>
+            </Text>
             <CloseIcon onClick={onDismiss} />
-          </RowBetween>
+          </Header>
         )}
         <ConfirmedIcon inline={inline}>
           <CustomLightSpinner src={Circle} alt="loader" size={inline ? '40px' : '90px'} />
         </ConfirmedIcon>
         <AutoColumn gap="12px" justify={'center'}>
-          <Text fontWeight={500} fontSize={20} textAlign="center">
-            <Trans>Waiting For Confirmation</Trans>
-          </Text>
           <Text fontWeight={400} fontSize={16} textAlign="center">
             {pendingText}
           </Text>
@@ -102,18 +106,18 @@ function TransactionSubmittedContent({
     <Wrapper>
       <Section inline={inline}>
         {!inline && (
-          <RowBetween>
+          <Header>
             <div />
+            <Text fontWeight={500} fontSize={24} textAlign="center">
+              <Trans>Transaction Submitted</Trans>
+            </Text>
             <CloseIcon onClick={onDismiss} />
-          </RowBetween>
+          </Header>
         )}
         <ConfirmedIcon inline={inline}>
           <ArrowUpCircle strokeWidth={0.5} size={inline ? '40px' : '90px'} color={theme.primary1} />
         </ConfirmedIcon>
         <AutoColumn gap="12px" justify={'center'}>
-          <Text fontWeight={500} fontSize={20} textAlign="center">
-            <Trans>Transaction Submitted</Trans>
-          </Text>
           {chainId && hash && (
             <ExternalLink href={getExplorerLink(chainId, hash, ExplorerDataType.TRANSACTION)}>
               <Text fontWeight={500} fontSize={14} color={theme.primary1}>
@@ -162,12 +166,13 @@ export function ConfirmationModalContent({
   return (
     <Wrapper>
       <Section>
-        <RowBetween>
-          <Text fontWeight={500} fontSize={16}>
+        <Header>
+          <div />
+          <Text fontWeight={500} fontSize={24}>
             {title}
           </Text>
           <CloseIcon onClick={onDismiss} />
-        </RowBetween>
+        </Header>
         {topContent()}
       </Section>
       {bottomContent && <BottomSection gap="12px">{bottomContent()}</BottomSection>}
@@ -180,12 +185,13 @@ export function TransactionErrorContent({ message, onDismiss }: { message: React
   return (
     <Wrapper>
       <Section>
-        <RowBetween>
-          <Text fontWeight={500} fontSize={20}>
+        <Header>
+          <div />
+          <Text fontWeight={500} fontSize={24}>
             <Trans>Error</Trans>
           </Text>
           <CloseIcon onClick={onDismiss} />
-        </RowBetween>
+        </Header>
         <AutoColumn style={{ marginTop: 20, padding: '2rem 0' }} gap="24px" justify="center">
           <AlertTriangle color={theme.red1} style={{ strokeWidth: 1.5 }} size={64} />
           <Text
@@ -238,7 +244,8 @@ function L2Content({
     <Wrapper>
       <Section inline={inline}>
         {!inline && (
-          <RowBetween mb="16px">
+          <Header mb="16px">
+            <div />
             <Badge>
               <RowFixed>
                 <StyledLogo src={info.logoUrl} style={{ margin: '0 8px 0 0' }} />
@@ -246,7 +253,7 @@ function L2Content({
               </RowFixed>
             </Badge>
             <CloseIcon onClick={onDismiss} />
-          </RowBetween>
+          </Header>
         )}
         <ConfirmedIcon inline={inline}>
           {confirmed ? (

@@ -9,6 +9,7 @@ import { MouseoverTooltip, MouseoverTooltipContent } from 'components/Tooltip'
 import JSBI from 'jsbi'
 import { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { ArrowDown, ArrowLeft, CheckCircle, HelpCircle, Info } from 'react-feather'
+import ChangeIcon from '../../assets/svg/change_icon.svg'
 import ReactGA from 'react-ga'
 import { Link, RouteComponentProps } from 'react-router-dom'
 import { Text } from 'rebass'
@@ -380,7 +381,6 @@ export default function Swap({ history }: RouteComponentProps) {
             swapErrorMessage={swapErrorMessage}
             onDismiss={handleConfirmDismiss}
           />
-
           <AutoColumn gap={'md'}>
             <div style={{ display: 'relative' }}>
               <CurrencyInputPanel
@@ -399,13 +399,14 @@ export default function Swap({ history }: RouteComponentProps) {
                 id="swap-currency-input"
               />
               <ArrowWrapper clickable>
-                <ArrowDown
-                  size="16"
+                <img
+                  width="32px"
                   onClick={() => {
                     setApprovalSubmitted(false) // reset 2 step UI for approvals
                     onSwitchTokens()
                   }}
-                  color={currencies[Field.INPUT] && currencies[Field.OUTPUT] ? theme.text1 : theme.text3}
+                  src={ChangeIcon}
+                  alt=""
                 />
               </ArrowWrapper>
               <CurrencyInputPanel
