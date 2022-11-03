@@ -13,6 +13,7 @@ import { useETHBalances } from 'state/wallet/hooks'
 import styled from 'styled-components/macro'
 import Logo from '../../assets/svg/logo.svg'
 import LogoDark from '../../assets/svg/logo_white.svg'
+import MobileLogoDark from '../../assets/svg/mobile_logo.svg'
 import { useActiveWeb3React } from '../../hooks/web3'
 import { ExternalLink, TYPE } from '../../theme'
 import ClaimModal from '../claim/ClaimModal'
@@ -177,6 +178,20 @@ const UniIcon = styled.div`
   :hover {
     transform: rotate(-5deg);
   }
+  ${({ theme }) => theme.mediaWidth.upToSmall`
+    display: none;
+  `};
+`
+
+const UniIconMobile = styled.div`
+  transition: transform 0.3s ease;
+  display: none;
+  :hover {
+    transform: rotate(-5deg);
+  }
+  ${({ theme }) => theme.mediaWidth.upToSmall`
+    display: block;
+  `};
 `
 
 const activeClassName = 'ACTIVE'
@@ -267,6 +282,9 @@ export default function Header() {
         <UniIcon>
           <img width={darkMode ? '208px' : '24px'} src={darkMode ? LogoDark : Logo} alt="logo" />
         </UniIcon>
+        <UniIconMobile>
+          <img width={darkMode ? '40px' : '24px'} src={darkMode ? MobileLogoDark : Logo} alt="logo" />
+        </UniIconMobile>
       </Title>
       <HeaderLinks>
         <StyledNavLink id={`swap-nav-link`} to={'/swap'}>
