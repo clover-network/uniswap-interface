@@ -8,7 +8,7 @@ import ReactGA from 'react-ga'
 import styled from 'styled-components/macro'
 import MetamaskIcon from '../../assets/images/metamask.png'
 import { ReactComponent as Close } from '../../assets/images/x.svg'
-import { changeWalletNetwork, CLOVER_PARACHAIN_NETWORK_EVM, fortmatic, injected, portis } from '../../connectors'
+import { fortmatic, injected, portis } from '../../connectors'
 import { OVERLAY_READY } from '../../connectors/Fortmatic'
 import { SUPPORTED_WALLETS } from '../../constants/wallet'
 import usePrevious from '../../hooks/usePrevious'
@@ -27,6 +27,7 @@ const CloseIcon = styled.div`
   position: absolute;
   right: 1rem;
   top: 14px;
+
   &:hover {
     cursor: pointer;
     opacity: 0.6;
@@ -161,10 +162,8 @@ export default function WalletModal({
 
   const tryActivation = async (connector: AbstractConnector | undefined) => {
     let name = ''
-    let currentNet = null
     Object.keys(SUPPORTED_WALLETS).map((key) => {
       if (connector === SUPPORTED_WALLETS[key].connector) {
-        currentNet = SUPPORTED_WALLETS[key]
         return (name = SUPPORTED_WALLETS[key].name)
       }
       return true
@@ -177,28 +176,16 @@ export default function WalletModal({
     })
     setPendingWallet(connector) // set wallet for pending view
     setWalletView(WALLET_VIEWS.PENDING)
-    console.log(connector)
-
     // if the connector is walletconnect and the user has already tried to connect, manually reset the connector
     if (connector instanceof WalletConnectConnector && connector.walletConnectProvider?.wc?.uri) {
-      console.log(connector.walletConnectProvider)
-
       connector.walletConnectProvider = undefined
     }
 
     connector &&
       activate(connector, undefined, true).catch((error) => {
-        console.log(111111)
         if (error instanceof UnsupportedChainIdError) {
-          console.log(222222)
-
-          // changeWalletNetwork(connector.walletConnectProvider, CLOVER_PARACHAIN_NETWORK_EVM).then((ret) => {
-          //   activate(connector)
-          // })
           activate(connector) // a little janky...can't use setError because the connector isn't set
         } else {
-          console.log(33333333)
-
           setPendingError(true)
         }
       })

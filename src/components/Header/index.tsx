@@ -95,7 +95,7 @@ const HeaderLinks = styled(Row)`
   overflow: auto;
   align-items: center;
   ${({ theme }) => theme.mediaWidth.upToLarge`
-    justify-self: start;
+    justify-self: center;
     `};
   ${({ theme }) => theme.mediaWidth.upToMedium`
     justify-self: center;

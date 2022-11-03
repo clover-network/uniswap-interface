@@ -1,7 +1,7 @@
 import { AbstractConnector } from '@web3-react/abstract-connector'
 import { UnsupportedChainIdError, useWeb3React } from '@web3-react/core'
 import { darken } from 'polished'
-import { useMemo } from 'react'
+import { useEffect, useMemo } from 'react'
 import { Activity } from 'react-feather'
 import { t, Trans } from '@lingui/macro'
 import styled, { css } from 'styled-components/macro'
@@ -9,7 +9,15 @@ import CoinbaseWalletIcon from '../../assets/images/coinbaseWalletIcon.svg'
 import FortmaticIcon from '../../assets/images/fortmaticIcon.png'
 import PortisIcon from '../../assets/images/portisIcon.png'
 import WalletConnectIcon from '../../assets/images/walletConnectIcon.svg'
-import { fortmatic, injected, portis, walletconnect, walletlink } from '../../connectors'
+import {
+  changeWalletNetwork,
+  CLOVER_PARACHAIN_NETWORK_EVM,
+  fortmatic,
+  injected,
+  portis,
+  walletconnect,
+  walletlink,
+} from '../../connectors'
 import { NetworkContextName } from '../../constants/misc'
 import useENSName from '../../hooks/useENSName'
 import { useHasSocks } from '../../hooks/useSocksBalance'
@@ -220,7 +228,15 @@ function Web3StatusInner() {
 }
 
 export default function Web3Status() {
-  const { active, account } = useWeb3React()
+  const { active, account, connector, activate, chainId } = useWeb3React()
+
+  useEffect(() => {
+    if (active && connector && chainId !== parseInt(CLOVER_PARACHAIN_NETWORK_EVM.chainId)) {
+      changeWalletNetwork(window.ethereum, CLOVER_PARACHAIN_NETWORK_EVM).then((ret) => {
+        activate(connector)
+      })
+    }
+  }, [active, connector, chainId])
   const contextNetwork = useWeb3React(NetworkContextName)
 
   const { ENSName } = useENSName(account ?? undefined)
