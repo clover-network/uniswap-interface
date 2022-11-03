@@ -58,6 +58,7 @@ const ResponsiveButtonPrimary = styled(ButtonPrimary)`
   width: fit-content;
   border-radius: 12px;
   background: ${({ theme }) => theme.primary5};
+  color: ${({ theme }) => theme.text1};
   font-weight: 600;
   font-size: 14px;
   line-height: 130%;

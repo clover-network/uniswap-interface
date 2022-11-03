@@ -20,7 +20,7 @@ import { useTokenBalance } from '../../state/wallet/hooks'
 import { StyledInternalLink } from '../../theme'
 import { currencyId } from '../../utils/currencyId'
 import AppBody from '../AppBody'
-import { Dots } from '../Pool/styleds'
+import { Dots, Wrapper } from '../Pool/styleds'
 import { BlueCard } from '../../components/Card'
 import { TYPE } from '../../theme'
 import { useLocation } from 'react-router'
@@ -97,10 +97,10 @@ export default function PoolFinder() {
     <>
       <AppBody>
         <FindPoolTabs origin={query.get('origin') ?? '/pool/v2'} />
-        <AutoColumn style={{ padding: '1rem' }} gap="md">
+        <Wrapper>
           <BlueCard>
             <AutoColumn gap="10px">
-              <TYPE.link fontWeight={400} color={'primaryText1'}>
+              <TYPE.link fontWeight={400} color={'primaryText2'}>
                 <Trans>
                   <b>Tip:</b> Use this tool to find v2 pools that don&apos;t automatically appear in the interface.
                 </Trans>
@@ -108,6 +108,7 @@ export default function PoolFinder() {
             </AutoColumn>
           </BlueCard>
           <ButtonDropdownLight
+            style={{ margin: '10px 0' }}
             onClick={() => {
               setShowSearch(true)
               setActiveField(Fields.TOKEN0)
@@ -132,6 +133,7 @@ export default function PoolFinder() {
           </ColumnCenter>
 
           <ButtonDropdownLight
+            style={{ margin: '10px 0' }}
             onClick={() => {
               setShowSearch(true)
               setActiveField(Fields.TOKEN1)
@@ -216,7 +218,7 @@ export default function PoolFinder() {
           ) : (
             prerequisiteMessage
           )}
-        </AutoColumn>
+        </Wrapper>
 
         <CurrencySearchModal
           isOpen={showSearch}

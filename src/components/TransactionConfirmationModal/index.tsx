@@ -23,6 +23,7 @@ import AnimatedConfirmation from './AnimatedConfirmation'
 const Wrapper = styled.div`
   width: 100%;
   padding: 1rem;
+  overflow: hidden;
 `
 const Header = styled(RowBetween)`
   padding: 6px 24px 24px;
@@ -35,6 +36,13 @@ const Section = styled(AutoColumn)<{ inline?: boolean }>`
 const BottomSection = styled(Section)`
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  background: #283241;
+  width: 420px;
+  margin-top: 24px;
+  margin-left: -16px;
+  margin-bottom: -16px;
+  padding: 16px;
+  color: ${({ theme }) => theme.primary1};
 `
 
 const ConfirmedIcon = styled(ColumnCenter)<{ inline?: boolean }>`
