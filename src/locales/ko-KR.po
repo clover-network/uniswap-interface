@@ -96,8 +96,8 @@ msgid "<0>Account analytics and accrued fees</0><1> ↗ </1>"
 msgstr "<0> 계정 분석 및 발생 수수료</0> <1> ↗</1>"
 
 #: src/pages/Swap/index.tsx
-msgid "<0>Back to </0>V3"
-msgstr "<0> 돌아가기</0> V3"
+msgid "<0>Back to </0>"
+msgstr "<0> 돌아가기</0>"
 
 #: src/pages/AddLiquidity/index.tsx
 msgid "<0>Current Price:</0><1><2/></1><3>{0} per {1}</3>"
@@ -189,8 +189,8 @@ msgid "Add {0}-{1} liquidity"
 msgstr "{0}-{1} 유동성 추가"
 
 #: src/pages/AddLiquidity/index.tsx
-msgid "Add {0}/{1} V3 liquidity"
-msgstr "{0}/{1} V3 유동성 추가"
+msgid "Add {0}/{1} liquidity"
+msgstr "{0}/{1} 유동성 추가"
 
 #: src/components/TransactionConfirmationModal/index.tsx
 msgid "Added {0}"
@@ -225,8 +225,8 @@ msgid "Amount"
 msgstr "금액"
 
 #: src/hooks/useSwapCallback.ts
-msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "이 스왑을 실행하는 중에 오류가 발생했습니다. 미끄러짐 허용치를 높여야 할 수도 있습니다. 그래도 작동하지 않으면 거래중인 토큰과 호환되지 않을 수 있습니다. 참고 : 전송 수수료 및 리베이스 토큰은 Uniswap V3와 호환되지 않습니다."
+msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Swapbay."
+msgstr "이 스왑을 실행하는 중에 오류가 발생했습니다. 미끄러짐 허용치를 높여야 할 수도 있습니다. 그래도 작동하지 않으면 거래중인 토큰과 호환되지 않을 수 있습니다. 참고 : 전송 수수료 및 리베이스 토큰은 Swapbay 와 호환되지 않습니다."
 
 #: src/components/Menu/index.tsx
 msgid "Analytics"
@@ -348,8 +348,8 @@ msgid "Check network status"
 msgstr "네트워크 상태 확인"
 
 #: src/pages/Pool/CTACards.tsx
-msgid "Check out our v3 LP walkthrough and migration guides."
-msgstr "v3 LP 연습 및 마이그레이션 가이드를 확인하세요."
+msgid "Check out our LP walkthrough and migration guides."
+msgstr "LP 연습 및 마이그레이션 가이드를 확인하세요."
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/ClaimRewardModal.tsx
@@ -564,16 +564,16 @@ msgid "Create an issue on GitHub"
 msgstr "GitHub에서 문제 만들기"
 
 #: src/pages/AddLiquidity/index.tsx
-msgid "Create pool and add {0}/{1} V3 liquidity"
-msgstr "풀 만들기 및 {0}/{1} V3 유동성 추가"
+msgid "Create pool and add {0}/{1} liquidity"
+msgstr "풀 만들기 및 {0}/{1} 유동성 추가"
 
 #: src/pages/PoolFinder/index.tsx
 msgid "Create pool."
 msgstr "풀을 만듭니다."
 
 #: src/pages/AddLiquidity/index.tsx
-msgid "Create {0}/{1} V3 pool"
-msgstr "작성 {0}/{1} V3 풀을"
+msgid "Create {0}/{1} pool"
+msgstr "작성 {0}/{1} 풀을"
 
 #: src/components/PositionPreview/index.tsx
 #: src/pages/Pool/PositionPage.tsx

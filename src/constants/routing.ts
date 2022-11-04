@@ -18,6 +18,8 @@ import {
   DAI_OPTIMISM,
   USDT_OPTIMISM,
   WBTC_OPTIMISM,
+  CLVUSDT,
+  CLVUSDC,
 } from './tokens'
 
 type ChainTokenList = {
@@ -91,6 +93,12 @@ export const COMMON_BASES: ChainCurrencyList = {
   ],
   [SupportedChainId.OPTIMISM]: [ExtendedEther.onChain(SupportedChainId.OPTIMISM)],
   [SupportedChainId.OPTIMISTIC_KOVAN]: [ExtendedEther.onChain(SupportedChainId.OPTIMISTIC_KOVAN)],
+  [SupportedChainId.CLV]: [
+    ExtendedEther.onChain(SupportedChainId.CLV),
+    WETH9_EXTENDED[SupportedChainId.CLV],
+    CLVUSDT,
+    CLVUSDC,
+  ],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend

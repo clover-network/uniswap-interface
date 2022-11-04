@@ -119,7 +119,7 @@ export function AddLiquidityNetworkAlert() {
     <Wrapper darkMode={darkMode} chainId={chainId} logoUrl={info.logoUrl}>
       <L2Icon src={info.logoUrl} />
       <Body>
-        <Trans>This is an alpha release of Uniswap on the {info.label} network.</Trans>
+        <Trans>This is an alpha release of Swapbay on the {info.label} network.</Trans>
         <DesktopTextBreak /> <Trans>You must bridge L1 assets to the network to use them.</Trans>{' '}
         <ReadMoreLink href={readMoreLink}>
           <Trans>Read more</Trans>

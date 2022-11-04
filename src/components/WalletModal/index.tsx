@@ -8,7 +8,7 @@ import ReactGA from 'react-ga'
 import styled from 'styled-components/macro'
 import MetamaskIcon from '../../assets/images/metamask.png'
 import { ReactComponent as Close } from '../../assets/images/x.svg'
-import { fortmatic, injected, portis } from '../../connectors'
+import { clvConnector, fortmatic, injected, portis } from '../../connectors'
 import { OVERLAY_READY } from '../../connectors/Fortmatic'
 import { SUPPORTED_WALLETS } from '../../constants/wallet'
 import usePrevious from '../../hooks/usePrevious'
@@ -22,6 +22,7 @@ import Modal from '../Modal'
 import Option from './Option'
 import PendingView from './PendingView'
 import { LightCard } from '../Card'
+import CLOVER_ICON_URL from '../../assets/images/clv_logo.svg'
 
 const CloseIcon = styled.div`
   position: absolute;
@@ -200,6 +201,7 @@ export default function WalletModal({
 
   // get wallets user can switch too, depending on device/browser
   function getOptions() {
+    const windowObj: any = window
     const isMetamask = window.ethereum && window.ethereum.isMetaMask
     return Object.keys(SUPPORTED_WALLETS).map((key) => {
       const option = SUPPORTED_WALLETS[key]
@@ -230,6 +232,30 @@ export default function WalletModal({
         return null
       }
 
+      if (option.connector === clvConnector) {
+        if (!(window.web3 || windowObj.clover)) {
+          if (option.name === 'Clover') {
+            return (
+              <Option
+                id={`connect-${key}`}
+                key={key}
+                color={'#E8831D'}
+                header={<Trans>Install Clover</Trans>}
+                subheader={null}
+                link={'https://chrome.google.com/webstore/detail/clv-wallet/nhnkbkgjikgcigadomkphalanndcapjk'}
+                icon={CLOVER_ICON_URL}
+              />
+            )
+          } else {
+            return null //dont want to return install twice
+          }
+        }
+        // don't return clover if injected provider isn't clover
+        else if (option.name === 'Clover' && !windowObj.clover) {
+          return null
+        }
+      }
+
       // overwrite injected when needed
       if (option.connector === injected) {
         // don't show injected if there's no injected provider
@@ -256,6 +282,10 @@ export default function WalletModal({
         }
         // likewise for generic
         else if (option.name === 'Injected' && isMetamask) {
+          return null
+        }
+        // don't return Injected if injected provider is clover
+        else if (option.name === 'Injected' && windowObj.clover) {
           return null
         }
       }
@@ -342,18 +372,18 @@ export default function WalletModal({
         )}
 
         <ContentWrapper>
-          <LightCard style={{ marginBottom: '16px' }}>
-            <AutoRow style={{ flexWrap: 'nowrap' }}>
-              <TYPE.main fontSize={14}>
-                <Trans>
-                  By connecting a wallet, you agree to Uniswap Labs’{' '}
-                  <ExternalLink href="https://uniswap.org/terms-of-service/">Terms of Service</ExternalLink> and
-                  acknowledge that you have read and understand the{' '}
-                  <ExternalLink href="https://uniswap.org/disclaimer/">Uniswap protocol disclaimer</ExternalLink>.
-                </Trans>
-              </TYPE.main>
-            </AutoRow>
-          </LightCard>
+          {/*<LightCard style={{ marginBottom: '16px' }}>*/}
+          {/*  <AutoRow style={{ flexWrap: 'nowrap' }}>*/}
+          {/*    <TYPE.main fontSize={14}>*/}
+          {/*      <Trans>*/}
+          {/*        By connecting a wallet, you agree to Uniswap Labs’{' '}*/}
+          {/*        <ExternalLink href="https://uniswap.org/terms-of-service/">Terms of Service</ExternalLink> and*/}
+          {/*        acknowledge that you have read and understand the{' '}*/}
+          {/*        <ExternalLink href="https://uniswap.org/disclaimer/">Uniswap protocol disclaimer</ExternalLink>.*/}
+          {/*      </Trans>*/}
+          {/*    </TYPE.main>*/}
+          {/*  </AutoRow>*/}
+          {/*</LightCard>*/}
           {walletView === WALLET_VIEWS.PENDING ? (
             <PendingView
               connector={pendingWallet}

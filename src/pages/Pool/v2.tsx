@@ -169,15 +169,15 @@ export default function Pool() {
                   </Trans>
                 </TYPE.white>
               </RowBetween>
-              <ExternalLink
-                style={{ color: 'white', textDecoration: 'underline' }}
-                target="_blank"
-                href="https://uniswap.org/docs/v2/core-concepts/pools/"
-              >
-                <TYPE.white fontSize={14}>
-                  <Trans>Read more about providing liquidity</Trans>
-                </TYPE.white>
-              </ExternalLink>
+              {/*<ExternalLink*/}
+              {/*  style={{ color: 'white', textDecoration: 'underline' }}*/}
+              {/*  target="_blank"*/}
+              {/*  href="https://uniswap.org/docs/v2/core-concepts/pools/"*/}
+              {/*>*/}
+              {/*  <TYPE.white fontSize={14}>*/}
+              {/*    <Trans>Read more about providing liquidity</Trans>*/}
+              {/*  </TYPE.white>*/}
+              {/*</ExternalLink>*/}
             </AutoColumn>
           </CardSection>
           <CardBGImage />
@@ -200,7 +200,7 @@ export default function Pool() {
               <TitleRow style={{ marginTop: '1rem' }} padding={'0'}>
                 <HideSmall>
                   <TYPE.mediumHeader style={{ marginTop: '0.5rem', justifySelf: 'flex-start' }}>
-                    <Trans>Your V2 liquidity</Trans>
+                    <Trans>Your liquidity</Trans>
                   </TYPE.mediumHeader>
                 </HideSmall>
                 <ButtonRow>
@@ -214,7 +214,7 @@ export default function Pool() {
                   </ResponsiveButtonPrimary>
                   <ResponsiveButtonPrimary id="join-pool-button" as={Link} to="/add/v2/ETH" padding="15px 24px">
                     <Text fontWeight={500} fontSize={16}>
-                      <Trans>Add V2 Liquidity</Trans>
+                      <Trans>Add Liquidity</Trans>
                     </Text>
                   </ResponsiveButtonPrimary>
                 </ButtonRow>
@@ -259,23 +259,23 @@ export default function Pool() {
                         />
                       )
                   )}
-                  <RowFixed justify="center" style={{ width: '100%' }}>
-                    <ButtonOutlined
-                      as={Link}
-                      to="/migrate/v2"
-                      id="import-pool-link"
-                      style={{
-                        padding: '8px 16px',
-                        margin: '0 4px',
-                        borderRadius: '12px',
-                        width: 'fit-content',
-                        fontSize: '14px',
-                      }}
-                    >
-                      <ChevronsRight size={16} style={{ marginRight: '8px' }} />
-                      <Trans>Migrate Liquidity to V3</Trans>
-                    </ButtonOutlined>
-                  </RowFixed>
+                  {/*<RowFixed justify="center" style={{ width: '100%' }}>*/}
+                  {/*  <ButtonOutlined*/}
+                  {/*    as={Link}*/}
+                  {/*    to="/migrate/v2"*/}
+                  {/*    id="import-pool-link"*/}
+                  {/*    style={{*/}
+                  {/*      padding: '8px 16px',*/}
+                  {/*      margin: '0 4px',*/}
+                  {/*      borderRadius: '12px',*/}
+                  {/*      width: 'fit-content',*/}
+                  {/*      fontSize: '14px',*/}
+                  {/*    }}*/}
+                  {/*  >*/}
+                  {/*    <ChevronsRight size={16} style={{ marginRight: '8px' }} />*/}
+                  {/*    <Trans>Migrate Liquidity to V3</Trans>*/}
+                  {/*  </ButtonOutlined>*/}
+                  {/*</RowFixed>*/}
                 </>
               ) : (
                 <EmptyProposals>

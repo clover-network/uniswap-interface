@@ -69,7 +69,7 @@ export default function Earn() {
               <RowBetween>
                 <TYPE.white fontSize={14}>
                   <Trans>
-                    Deposit your Liquidity Provider tokens to receive UNI, the Uniswap protocol governance token.
+                    Deposit your Liquidity Provider tokens to receive UNI, the Swapbay protocol governance token.
                   </Trans>
                 </TYPE.white>
               </RowBetween>{' '}

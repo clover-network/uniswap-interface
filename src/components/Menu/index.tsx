@@ -232,36 +232,36 @@ export default function Menu() {
             default:
               return (
                 <MenuFlyout>
-                  <MenuItem href="https://uniswap.org/">
-                    <div>
-                      <Trans>About</Trans>
-                    </div>
-                    <Info opacity={0.6} size={16} />
-                  </MenuItem>
-                  <MenuItem href="https://docs.uniswap.org/">
-                    <div>
-                      <Trans>Docs</Trans>
-                    </div>
-                    <BookOpen opacity={0.6} size={16} />
-                  </MenuItem>
-                  <MenuItem href={CODE_LINK}>
-                    <div>
-                      <Trans>Code</Trans>
-                    </div>
-                    <Code opacity={0.6} size={16} />
-                  </MenuItem>
-                  <MenuItem href="https://discord.gg/FCfyBSbCU5">
-                    <div>
-                      <Trans>Discord</Trans>
-                    </div>
-                    <MessageCircle opacity={0.6} size={16} />
-                  </MenuItem>
-                  <MenuItem href={infoLink}>
-                    <div>
-                      <Trans>Analytics</Trans>
-                    </div>
-                    <PieChart opacity={0.6} size={16} />
-                  </MenuItem>
+                  {/*<MenuItem href="https://uniswap.org/">*/}
+                  {/*  <div>*/}
+                  {/*    <Trans>About</Trans>*/}
+                  {/*  </div>*/}
+                  {/*  <Info opacity={0.6} size={16} />*/}
+                  {/*</MenuItem>*/}
+                  {/*<MenuItem href="https://docs.uniswap.org/">*/}
+                  {/*  <div>*/}
+                  {/*    <Trans>Docs</Trans>*/}
+                  {/*  </div>*/}
+                  {/*  <BookOpen opacity={0.6} size={16} />*/}
+                  {/*</MenuItem>*/}
+                  {/*<MenuItem href={CODE_LINK}>*/}
+                  {/*  <div>*/}
+                  {/*    <Trans>Code</Trans>*/}
+                  {/*  </div>*/}
+                  {/*  <Code opacity={0.6} size={16} />*/}
+                  {/*</MenuItem>*/}
+                  {/*<MenuItem href="https://discord.gg/FCfyBSbCU5">*/}
+                  {/*  <div>*/}
+                  {/*    <Trans>Discord</Trans>*/}
+                  {/*  </div>*/}
+                  {/*  <MessageCircle opacity={0.6} size={16} />*/}
+                  {/*</MenuItem>*/}
+                  {/*<MenuItem href={infoLink}>*/}
+                  {/*  <div>*/}
+                  {/*    <Trans>Analytics</Trans>*/}
+                  {/*  </div>*/}
+                  {/*  <PieChart opacity={0.6} size={16} />*/}
+                  {/*</MenuItem>*/}
                   <ToggleMenuItem onClick={() => setMenu('lang')}>
                     <div>
                       <Trans>Language</Trans>
@@ -272,17 +272,17 @@ export default function Menu() {
                   {/*  <div>{darkMode ? <Trans>Light Theme</Trans> : <Trans>Dark Theme</Trans>}</div>*/}
                   {/*  {darkMode ? <Moon opacity={0.6} size={16} /> : <Sun opacity={0.6} size={16} />}*/}
                   {/*</ToggleMenuItem>*/}
-                  {showUNIClaimOption && (
-                    <UNIbutton
-                      onClick={openClaimModal}
-                      padding="8px 16px"
-                      width="100%"
-                      $borderRadius="12px"
-                      mt="0.5rem"
-                    >
-                      <Trans>Claim UNI</Trans>
-                    </UNIbutton>
-                  )}
+                  {/*{showUNIClaimOption && (*/}
+                  {/*  <UNIbutton*/}
+                  {/*    onClick={openClaimModal}*/}
+                  {/*    padding="8px 16px"*/}
+                  {/*    width="100%"*/}
+                  {/*    $borderRadius="12px"*/}
+                  {/*    mt="0.5rem"*/}
+                  {/*  >*/}
+                  {/*    <Trans>Claim UNI</Trans>*/}
+                  {/*  </UNIbutton>*/}
+                  {/*)}*/}
                 </MenuFlyout>
               )
           }

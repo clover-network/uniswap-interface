@@ -97,7 +97,7 @@ msgstr "<0>Analyses du compte et des frais accumulés</0><1> ↗ </1>"
 
 #: src/pages/Swap/index.tsx
 msgid "<0>Back to </0>V3"
-msgstr "<0> Retour à</0> V3"
+msgstr "<0> Retour à</0>"
 
 #: src/pages/AddLiquidity/index.tsx
 msgid "<0>Current Price:</0><1><2/></1><3>{0} per {1}</3>"
@@ -189,8 +189,8 @@ msgid "Add {0}-{1} liquidity"
 msgstr "Ajouter de la liquidité {0}/{1}"
 
 #: src/pages/AddLiquidity/index.tsx
-msgid "Add {0}/{1} V3 liquidity"
-msgstr "Ajouter des liquidités V3 {0}/{1}"
+msgid "Add {0}/{1} liquidity"
+msgstr "Ajouter des liquidités {0}/{1}"
 
 #: src/components/TransactionConfirmationModal/index.tsx
 msgid "Added {0}"
@@ -225,8 +225,8 @@ msgid "Amount"
 msgstr "Montant"
 
 #: src/hooks/useSwapCallback.ts
-msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Une erreur s'est produite lors de la tentative d'exécution de cet échange. Vous devrez peut-être augmenter votre tolérance au slippage. Si cela ne fonctionne pas, il peut y avoir une incompatibilité avec le token que vous échangez. Remarque : les frais sur les token de transfert et de rebase sont incompatibles avec Uniswap V3."
+msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap."
+msgstr "Une erreur s'est produite lors de la tentative d'exécution de cet échange. Vous devrez peut-être augmenter votre tolérance au slippage. Si cela ne fonctionne pas, il peut y avoir une incompatibilité avec le token que vous échangez. Remarque : les frais sur les token de transfert et de rebase sont incompatibles avec Uniswap."
 
 #: src/components/Menu/index.tsx
 msgid "Analytics"
@@ -348,8 +348,8 @@ msgid "Check network status"
 msgstr "Vérifier l'état du réseau"
 
 #: src/pages/Pool/CTACards.tsx
-msgid "Check out our v3 LP walkthrough and migration guides."
-msgstr "Consultez nos guides d'utilisation et de migration pour la v3 LP."
+msgid "Check out our LP walkthrough and migration guides."
+msgstr "Consultez nos guides d'utilisation et de migration pour la LP."
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/ClaimRewardModal.tsx
@@ -564,15 +564,15 @@ msgid "Create an issue on GitHub"
 msgstr "Créer un problème sur GitHub"
 
 #: src/pages/AddLiquidity/index.tsx
-msgid "Create pool and add {0}/{1} V3 liquidity"
-msgstr "Créer un pool et ajouter {0}/{1} liquidités V3"
+msgid "Create pool and add {0}/{1} liquidity"
+msgstr "Créer un pool et ajouter {0}/{1} liquidités"
 
 #: src/pages/PoolFinder/index.tsx
 msgid "Create pool."
 msgstr "Créer un pool."
 
 #: src/pages/AddLiquidity/index.tsx
-msgid "Create {0}/{1} V3 pool"
+msgid "Create {0}/{1} pool"
 msgstr "Créer {0}/{1} une pool V3"
 
 #: src/components/PositionPreview/index.tsx

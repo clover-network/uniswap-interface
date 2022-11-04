@@ -97,7 +97,7 @@ msgstr "<0> ניתוח חשבונות ועמלות שנצברו</0> <1> ↗</1>"
 
 #: src/pages/Swap/index.tsx
 msgid "<0>Back to </0>V3"
-msgstr "<0> חזרה אל</0> V3"
+msgstr "<0> חזרה אל</0>"
 
 #: src/pages/AddLiquidity/index.tsx
 msgid "<0>Current Price:</0><1><2/></1><3>{0} per {1}</3>"
@@ -189,8 +189,8 @@ msgid "Add {0}-{1} liquidity"
 msgstr "הוסף {0}-{1} נזילות"
 
 #: src/pages/AddLiquidity/index.tsx
-msgid "Add {0}/{1} V3 liquidity"
-msgstr "להוסיף {0}/{1} נזילות V3"
+msgid "Add {0}/{1} liquidity"
+msgstr "להוסיף {0}/{1} נזילות"
 
 #: src/components/TransactionConfirmationModal/index.tsx
 msgid "Added {0}"
@@ -225,8 +225,8 @@ msgid "Amount"
 msgstr "כמות"
 
 #: src/hooks/useSwapCallback.ts
-msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "אירעה שגיאה בניסיון לבצע החלפה זו. יתכן שתצטרך להגביר את סובלנות ההחלקה שלך. אם זה לא עובד, ייתכן שיש אי התאמה לאסימון שאתה סוחר בו. הערה: עמלה על אסימון העברה וריבוס אינם תואמים ל- Uniswap V3."
+msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap."
+msgstr "אירעה שגיאה בניסיון לבצע החלפה זו. יתכן שתצטרך להגביר את סובלנות ההחלקה שלך. אם זה לא עובד, ייתכן שיש אי התאמה לאסימון שאתה סוחר בו. הערה: עמלה על אסימון העברה וריבוס אינם תואמים ל- Uniswap."
 
 #: src/components/Menu/index.tsx
 msgid "Analytics"
@@ -348,8 +348,8 @@ msgid "Check network status"
 msgstr "בדוק את מצב הרשת"
 
 #: src/pages/Pool/CTACards.tsx
-msgid "Check out our v3 LP walkthrough and migration guides."
-msgstr "עיין במדריכי ההדרכה וההעברה של v3 LP שלנו."
+msgid "Check out our LP walkthrough and migration guides."
+msgstr "עיין במדריכי ההדרכה וההעברה של LP שלנו."
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/ClaimRewardModal.tsx
@@ -564,15 +564,15 @@ msgid "Create an issue on GitHub"
 msgstr "צור בעיה ב- GitHub"
 
 #: src/pages/AddLiquidity/index.tsx
-msgid "Create pool and add {0}/{1} V3 liquidity"
-msgstr "צור ברכה והוסף {0}/{1} נזילות V3"
+msgid "Create pool and add {0}/{1} liquidity"
+msgstr "צור ברכה והוסף {0}/{1} נזילות"
 
 #: src/pages/PoolFinder/index.tsx
 msgid "Create pool."
 msgstr "צור בריכה."
 
 #: src/pages/AddLiquidity/index.tsx
-msgid "Create {0}/{1} V3 pool"
+msgid "Create {0}/{1} pool"
 msgstr "צור {0}/{1} הבריכה V3"
 
 #: src/components/PositionPreview/index.tsx

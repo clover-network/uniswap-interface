@@ -152,7 +152,7 @@ export function NetworkAlert() {
         </Header>
         <Body>
           <Trans>
-            This is an alpha release of Uniswap on the {info.label} network. You must bridge L1 assets to the network to
+            This is an alpha release ofSwapbay on the {info.label} network. You must bridge L1 assets to the network to
             swap them.
           </Trans>{' '}
           <ReadMoreLink href={readMoreLink}>

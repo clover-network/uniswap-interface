@@ -116,6 +116,22 @@ export const UNI: { [chainId: number]: Token } = {
   [SupportedChainId.KOVAN]: new Token(SupportedChainId.KOVAN, UNI_ADDRESS[42], 18, 'UNI', 'Uniswap'),
 }
 
+export const CLVUSDT = new Token(
+  SupportedChainId.CLV,
+  '0xF91193A62879279d6b8f209f89b6418e3C0e5CBf',
+  6,
+  'USDT',
+  'Tether USD'
+)
+
+export const CLVUSDC = new Token(
+  SupportedChainId.CLV,
+  '0x4A52F069Cb00905d996A0d7B811D78e60b4cB09E',
+  6,
+  'USDC',
+  'USD//C'
+)
+
 export const WETH9_EXTENDED: { [chainId: number]: Token } = {
   ...WETH9,
   [SupportedChainId.OPTIMISM]: new Token(

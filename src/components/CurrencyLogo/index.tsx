@@ -4,9 +4,40 @@ import React, { useMemo } from 'react'
 import styled from 'styled-components/macro'
 import EthereumLogo from '../../assets/images/CLV_token.svg'
 import ClvTokenLogo from '../../assets/images/CLV_token.svg'
+import ClvBNBLogo from '../../assets/images/clv/BNB.png'
+import ClvBUSDLogo from '../../assets/images/clv/BUSD.png'
+import ClvDAILogo from '../../assets/images/clv/DAI.png'
+import ClvMULTILogo from '../../assets/images/clv/MULTI.png'
+import ClvUSDCLogo from '../../assets/images/clv/USDC.png'
+import ClvUSDTLogo from '../../assets/images/clv/USDT.png'
+import ClvWBTCLogo from '../../assets/images/clv/WBTC.png'
+import ClvWETHLogo from '../../assets/images/clv/WETH.png'
 import useHttpLocations from '../../hooks/useHttpLocations'
 import { WrappedTokenInfo } from '../../state/lists/wrappedTokenInfo'
 import Logo from '../Logo'
+
+export const getCLVTokenLogoURL = (symbol: string) => {
+  switch (symbol) {
+    case 'BNB':
+      return [ClvBNBLogo]
+    case 'BUSD':
+      return [ClvBUSDLogo]
+    case 'DAI':
+      return [ClvDAILogo]
+    case 'MULTI':
+      return [ClvMULTILogo]
+    case 'USDC':
+      return [ClvUSDCLogo]
+    case 'USDT':
+      return [ClvUSDTLogo]
+    case 'WBTC':
+      return [ClvWBTCLogo]
+    case 'WETH':
+      return [ClvWETHLogo]
+    default:
+      return []
+  }
+}
 
 export const getTokenLogoURL = (address: string) =>
   `https://raw.githubusercontent.com/uniswap/assets/master/blockchains/ethereum/assets/${address}/logo.png`
@@ -44,8 +75,11 @@ export default function CurrencyLogo({
     if (isClv(currency.chainId)) {
       if (currency.address === ExtendedEther.onChain(currency.chainId).wrapped.address) {
         return [ClvTokenLogo]
+      } else if (currency.symbol) {
+        return getCLVTokenLogoURL(currency.symbol)
       }
-    } else if (currency.isToken) {
+    }
+    if (currency.isToken) {
       const defaultUrls = currency.chainId === 1 ? [getTokenLogoURL(currency.address)] : []
       if (currency instanceof WrappedTokenInfo) {
         return [...uriLocations, ...defaultUrls]

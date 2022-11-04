@@ -10,6 +10,7 @@ import { ALL_SUPPORTED_CHAIN_IDS, SupportedChainId } from '../constants/chains'
 import getLibrary from '../utils/getLibrary'
 import { FortmaticConnector } from './Fortmatic'
 import { NetworkConnector } from './NetworkConnector'
+import { CloverConnector } from '@clover-network/clover-connector'
 
 const INFURA_KEY = process.env.REACT_APP_INFURA_KEY
 const FORMATIC_KEY = process.env.REACT_APP_FORTMATIC_KEY
@@ -34,7 +35,7 @@ export const NETWORK_URLS: { [key in SupportedChainId]: string } = {
 
 export const network = new NetworkConnector({
   urls: NETWORK_URLS,
-  defaultChainId: 1,
+  defaultChainId: 1024,
 })
 
 let networkLibrary: Web3Provider | undefined
@@ -45,6 +46,9 @@ export function getNetworkLibrary(): Web3Provider {
 export const injected = new InjectedConnector({
   supportedChainIds: ALL_SUPPORTED_CHAIN_IDS,
 })
+
+const SUPPORTED_CHAINIDS = [1, 3, 4, 56, 97, 1023, 1024]
+export const clvConnector = new CloverConnector({ supportedChainIds: SUPPORTED_CHAINIDS })
 
 export const gnosisSafe = new SafeAppConnector()
 
