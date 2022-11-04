@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: uniswap-interface\n"
+"Project-Id-Version: Swapbay-interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: 2021-09-16 03:04\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3;\n"
-"X-Crowdin-Project: uniswap-interface\n"
+"X-Crowdin-Project: Swapbay-interface\n"
 "X-Crowdin-Project-ID: 458284\n"
 "X-Crowdin-Language: he\n"
 "X-Crowdin-File: en-US.po\n"
@@ -55,8 +55,8 @@ msgstr "- הסר שליחה"
 #: src/components/earn/PoolCard.tsx
 #: src/pages/Earn/Manage.tsx
 #: src/pages/Earn/Manage.tsx
-msgid "0 UNI / week"
-msgstr "0 UNI לשבוע"
+msgid "0 / week"
+msgstr "0 לשבוע"
 
 #: src/components/FeeSelector/index.tsx
 msgid "0.05% fee"
@@ -96,7 +96,7 @@ msgid "<0>Account analytics and accrued fees</0><1> ↗ </1>"
 msgstr "<0> ניתוח חשבונות ועמלות שנצברו</0> <1> ↗</1>"
 
 #: src/pages/Swap/index.tsx
-msgid "<0>Back to </0>V3"
+msgid "<0>Back to </0>"
 msgstr "<0> חזרה אל</0>"
 
 #: src/pages/AddLiquidity/index.tsx
@@ -112,8 +112,8 @@ msgid "<0>Tip:</0> Select an action and describe your proposal for the community
 msgstr "<0> טיפ:</0> בחר פעולה ותיאר את ההצעה שלך לקהילה. לא ניתן לשנות את ההצעה לאחר הגשתה, לכן אנא בדוק את כל המידע לפני הגשתה. תקופת ההצבעה תחל מיידית ותמשך 7 ימים. כדי להציע פעולה מותאמת אישית, <1> קרא את המסמכים</1> ."
 
 #: src/pages/PoolFinder/index.tsx
-msgid "<0>Tip:</0> Use this tool to find v2 pools that don't automatically appear in the interface."
-msgstr "<0> טיפ:</0> השתמש בכלי זה כדי למצוא מאגרי v2 שלא מופיעים אוטומטית בממשק."
+msgid "<0>Tip:</0> Use this tool to find pools that don't automatically appear in the interface."
+msgstr "<0> טיפ:</0> השתמש בכלי זה כדי למצוא מאגרי שלא מופיעים אוטומטית בממשק."
 
 #: src/pages/AddLiquidityV2/index.tsx
 msgid "<0>Tip:</0> When you add liquidity, you will receive pool tokens representing your position. These tokens automatically earn fees proportional to your share of the pool, and can be redeemed at any time."
@@ -124,12 +124,12 @@ msgid "<0>Unlock voting</0> to prepare for the next proposal."
 msgstr "<0> בטל את ההצבעה</0> להתכונן להצעה הבאה."
 
 #: src/components/claim/ClaimModal.tsx
-msgid "<0>🎉 </0>Welcome to team Unicorn :) <1>🎉</1>"
+msgid "<0>🎉 </0>Welcome to teamcorn :) <1>🎉</1>"
 msgstr "<0> 🎉</0> ברוך הבא לצוות חד קרן :) <1> 🎉</1>"
 
 #: src/pages/Vote/index.tsx
-msgid "A minimum threshold of 0.25% of the total UNI supply is required to submit proposals"
-msgstr "הגשת הצעות נדרשת רף מינימלי של 0.25% מסך היצע ה- UNI"
+msgid "A minimum threshold of 0.25% of the total supply is required to submit proposals"
+msgstr "הגשת הצעות נדרשת רף מינימלי של 0.25% מסך היצע ה-"
 
 #: src/components/Menu/index.tsx
 msgid "About"
@@ -164,8 +164,8 @@ msgid "Add Liquidity"
 msgstr "הוסף נזילות"
 
 #: src/pages/Pool/v2.tsx
-msgid "Add V2 Liquidity"
-msgstr "הוסף נזילות V2"
+msgid "Add Liquidity"
+msgstr "הוסף נזילות"
 
 #: src/pages/PoolFinder/index.tsx
 msgid "Add liquidity."
@@ -213,8 +213,8 @@ msgid "Allow high price impact trades and skip the confirm screen. Use at your o
 msgstr "אפשר עסקאות עם השפעות מחיר גבוהות ודלג על מסך האישור. השימוש על אחריותך בלבד."
 
 #: src/pages/Swap/index.tsx
-msgid "Allow the Uniswap Protocol to use your {0}"
-msgstr "אפשר לפרוטוקול Uniswap להשתמש ב- {0}"
+msgid "Allow the Swapbay Protocol to use your {0}"
+msgstr "אפשר לפרוטוקול Swapbay להשתמש ב- {0}"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allowed"
@@ -225,8 +225,8 @@ msgid "Amount"
 msgstr "כמות"
 
 #: src/hooks/useSwapCallback.ts
-msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap."
-msgstr "אירעה שגיאה בניסיון לבצע החלפה זו. יתכן שתצטרך להגביר את סובלנות ההחלקה שלך. אם זה לא עובד, ייתכן שיש אי התאמה לאסימון שאתה סוחר בו. הערה: עמלה על אסימון העברה וריבוס אינם תואמים ל- Uniswap."
+msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Swapbay."
+msgstr "אירעה שגיאה בניסיון לבצע החלפה זו. יתכן שתצטרך להגביר את סובלנות ההחלקה שלך. אם זה לא עובד, ייתכן שיש אי התאמה לאסימון שאתה סוחר בו. הערה: עמלה על אסימון העברה וריבוס אינם תואמים ל- Swapbay."
 
 #: src/components/Menu/index.tsx
 msgid "Analytics"
@@ -269,8 +269,8 @@ msgid "Are you sure?"
 msgstr "האם אתה בטוח?"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "As a member of the Uniswap community you may claim UNI to be used for voting and governance.<0/><1/><2>Read more about UNI</2>"
-msgstr "כחבר בקהילת Uniswap אתה יכול לטעון ש- UNI משמשת להצבעה ולממשל. <0/> <1/> <2> קרא עוד על UNI</2>"
+msgid "As a member of the Swapbay community you may claim to be used for voting and governance.<0/><1/><2>Read more about</2>"
+msgstr "כחבר בקהילת Swapbay אתה יכול לטעון ש- משמשת להצבעה ולממשל. <0/> <1/> <2> קרא עוד על</2>"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "At least {0} {1} and {2} {3} will be refunded to your wallet due to selected price range."
@@ -324,8 +324,8 @@ msgid "By adding this list you are implicitly trusting that the data is correct.
 msgstr "על ידי הוספת רשימה זו אתה סומך באופן מרומז על כך שהנתונים נכונים. כל אחד יכול ליצור רשימה, כולל יצירת גרסאות מזויפות של רשימות קיימות ורשימות המתיימרות לייצג פרויקטים שאין להם."
 
 #: src/components/WalletModal/index.tsx
-msgid "By connecting a wallet, you agree to Uniswap Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the <1>Uniswap protocol disclaimer</1>."
-msgstr "על ידי חיבור ארנק אתה מסכים <0>לתנאי השירות</0> של Uniswap Labs ומודה כי קראת והבנת את כתב הוויתור על פרוטוקול <1>Uniswap</1>."
+msgid "By connecting a wallet, you agree to Swapbay Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the <1>Swapbay protocol disclaimer</1>."
+msgstr "על ידי חיבור ארנק אתה מסכים <0>לתנאי השירות</0> של Swapbay Labs ומודה כי קראת והבנת את כתב הוויתור על פרוטוקול <1>Swapbay</1>."
 
 #: src/pages/Vote/styled.tsx
 msgid "Canceled"
@@ -362,25 +362,25 @@ msgstr "תְבִיעָה"
 #: src/components/claim/AddressClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
-msgid "Claim UNI"
-msgstr "תבע את UNI"
+msgid "Claim"
+msgstr "תבע את"
 
 #: src/components/claim/AddressClaimModal.tsx
-msgid "Claim UNI Token"
-msgstr "תבע את אסימון UNI"
+msgid "Claim Token"
+msgstr "תבע את אסימון"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/ClaimRewardModal.tsx
-msgid "Claim accumulated UNI rewards"
-msgstr "התביעה צברה תגמולים של UNI"
+msgid "Claim accumulated rewards"
+msgstr "התביעה צברה תגמולים של"
 
 #: src/pages/Pool/PositionPage.tsx
 msgid "Claim fees"
 msgstr "דמי תביעה"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "Claim your UNI tokens"
-msgstr "תבע את אסימוני ה- UNI שלך"
+msgid "Claim your tokens"
+msgstr "תבע את אסימוני ה- שלך"
 
 #: src/components/claim/AddressClaimModal.tsx
 msgid "Claimed"
@@ -388,21 +388,21 @@ msgstr "נִתבָּע"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Claimed UNI!"
-msgstr "UNI נתבע!"
+msgid "Claimed!"
+msgstr "נתבע!"
 
 #: src/components/claim/AddressClaimModal.tsx
 msgid "Claiming"
 msgstr "תביעה"
 
 #: src/components/Header/index.tsx
-msgid "Claiming UNI"
-msgstr "תביעת UNI"
+msgid "Claiming"
+msgstr "תביעת"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Claiming {0} UNI"
-msgstr "תביעת {0} UNI"
+msgid "Claiming {0}"
+msgstr "תביעת {0}"
 
 #: src/pages/AddLiquidity/index.tsx
 msgid "Clear All"
@@ -517,8 +517,8 @@ msgid "Connect to a wallet to find pools"
 msgstr "התחבר לארנק כדי למצוא בריכות"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Connect to a wallet to view your V2 liquidity."
-msgstr "התחבר לארנק כדי להציג את נזילות V2 שלך."
+msgid "Connect to a wallet to view your liquidity."
+msgstr "התחבר לארנק כדי להציג את נזילות שלך."
 
 #: src/pages/Pool/v2.tsx
 msgid "Connect to a wallet to view your liquidity."
@@ -573,7 +573,7 @@ msgstr "צור בריכה."
 
 #: src/pages/AddLiquidity/index.tsx
 msgid "Create {0}/{1} pool"
-msgstr "צור {0}/{1} הבריכה V3"
+msgstr "צור {0}/{1} הבריכה"
 
 #: src/components/PositionPreview/index.tsx
 #: src/pages/Pool/PositionPage.tsx
@@ -620,8 +620,8 @@ msgid "Deposit Amounts"
 msgstr "סכומי הפקדה"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Deposit UNI-V2 LP Tokens"
-msgstr "הפקדת אסימוני LP של UNI-V2"
+msgid "Deposit LP Tokens"
+msgstr "הפקדת אסימוני LP של"
 
 #: src/components/earn/StakingModal.tsx
 msgid "Deposit liquidity"
@@ -634,16 +634,16 @@ msgid "Deposit to {0}"
 msgstr "הפקדה ל {0}"
 
 #: src/pages/Earn/index.tsx
-msgid "Deposit your Liquidity Provider tokens to receive UNI, the Uniswap protocol governance token."
-msgstr "הפקד את אסימוני ספק הנזילות שלך לקבלת UNI, אסימון הממשל לפרוטוקול Uniswap."
+msgid "Deposit your Liquidity Provider tokens to receive , the Swapbay protocol governance token."
+msgstr "הפקד את אסימוני ספק הנזילות שלך לקבלת , אסימון הממשל לפרוטוקול Swapbay."
 
 #: src/components/earn/UnstakingModal.tsx
 msgid "Deposited liquidity:"
 msgstr "נזילות שהופקדה:"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Deposited {0} UNI-V2"
-msgstr "הופקד {0} UNI-V2"
+msgid "Deposited {0}"
+msgstr "הופקד {0}"
 
 #: src/components/earn/StakingModal.tsx
 msgid "Depositing Liquidity"
@@ -682,12 +682,12 @@ msgid "Docs"
 msgstr "מסמכים"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Don’t see one of your v2 positions? <0>Import it.</0>"
-msgstr "אינך רואה את אחת מעמדות ה- v2 שלך? <0> יבא אותו.</0>"
+msgid "Don’t see one of your positions? <0>Import it.</0>"
+msgstr "אינך רואה את אחת מעמדות ה- שלך? <0> יבא אותו.</0>"
 
 #: src/components/vote/DelegateModal.tsx
-msgid "Earned UNI tokens represent voting shares in Uniswap governance."
-msgstr "אסימונים של UNI שהושכרו מייצגים מניות הצבעה בממשל Uniswap."
+msgid "Earned tokens represent voting shares in Swapbay governance."
+msgstr "אסימונים של שהושכרו מייצגים מניות הצבעה בממשל Swapbay."
 
 #: src/components/FeeSelector/index.tsx
 msgid "Edit"
@@ -710,8 +710,8 @@ msgid "Enter a valid slippage percentage"
 msgstr "הזן אחוז החלקה חוקי"
 
 #: src/components/claim/AddressClaimModal.tsx
-msgid "Enter an address to trigger a UNI claim. If the address has any claimable UNI it will be sent to them on submission."
-msgstr "הזן כתובת להפעלת תביעה של UNI. אם לכתובת יש UNI כלשהו הניתן לתביעה, היא תישלח אליהם בהגשה."
+msgid "Enter an address to trigger a claim. If the address has any claimable it will be sent to them on submission."
+msgstr "הזן כתובת להפעלת תביעה של . אם לכתובת יש כלשהו הניתן לתביעה, היא תישלח אליהם בהגשה."
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
@@ -767,8 +767,8 @@ msgid "Expired"
 msgstr "לא בתוקף"
 
 #: src/pages/Pool/CTACards.tsx
-msgid "Explore popular pools on Uniswap Analytics."
-msgstr "גלה בריכות פופולריות ב- Uniswap Analytics."
+msgid "Explore popular pools on Swapbay Analytics."
+msgstr "גלה בריכות פופולריות ב- Swapbay Analytics."
 
 #: src/components/PositionPreview/index.tsx
 msgid "Fee Tier"
@@ -783,8 +783,8 @@ msgid "For"
 msgstr "ל"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "For each pool shown below, click migrate to remove your liquidity from Uniswap V2 and deposit it into Uniswap V3."
-msgstr "עבור כל מאגר המוצג למטה, לחץ על העבר כדי להסיר את הנזילות שלך מ- Uniswap V2 והפקד אותו ל- Uniswap V3."
+msgid "For each pool shown below, click migrate to remove your liquidity from Swapbay and deposit it into Swapbay ."
+msgstr "עבור כל מאגר המוצג למטה, לחץ על העבר כדי להסיר את הנזילות שלך מ- Swapbay והפקד אותו ל- Swapbay ."
 
 #: src/components/swap/SwapModalHeader.tsx
 #: src/pages/Swap/index.tsx
@@ -840,8 +840,8 @@ msgid "Import Pool"
 msgstr "יְיבוּא בריכה"
 
 #: src/components/NavigationTabs/index.tsx
-msgid "Import V2 Pool"
-msgstr "יְיבוּא בריכת V2"
+msgid "Import Pool"
+msgstr "יְיבוּא בריכת"
 
 #: src/components/SearchModal/ImportList.tsx
 msgid "Import at your own risk"
@@ -1032,17 +1032,17 @@ msgid "Migrate Liquidity"
 msgstr "העבר נזילות"
 
 #: src/pages/Pool/v2.tsx
-msgid "Migrate Liquidity to V3"
-msgstr "העבר נזילות ל- V3"
+msgid "Migrate Liquidity to"
+msgstr "העבר נזילות ל-"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 #: src/pages/MigrateV2/index.tsx
-msgid "Migrate V2 Liquidity"
-msgstr "העבר נזילות V2"
+msgid "Migrate Liquidity"
+msgstr "העבר נזילות"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Migrate your liquidity tokens from Uniswap V2 to Uniswap V3."
-msgstr "העבר את אסימוני הנזילות שלך מ- Uniswap V2 ל- Uniswap V3."
+msgid "Migrate your liquidity tokens from Swapbay to Swapbay ."
+msgstr "העבר את אסימוני הנזילות שלך מ- Swapbay ל- Swapbay ."
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Migrating"
@@ -1078,8 +1078,8 @@ msgid "New Position"
 msgstr "עמדה חדשה"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "No V2 Liquidity found."
-msgstr "לא נמצאה נזילות V2."
+msgid "No Liquidity found."
+msgstr "לא נמצאה נזילות ."
 
 #: src/pages/Earn/index.tsx
 #: src/pages/Earn/index.tsx
@@ -1135,8 +1135,8 @@ msgid "Once you are happy with the rate click supply to review."
 msgstr "ברגע שאתה מרוצה מההספק לחץ על האספקה לבדיקה."
 
 #: src/pages/Vote/VotePage.tsx
-msgid "Only UNI votes that were self delegated or delegated to another address before block {0} are eligible for voting."
-msgstr "זכאים להצביע רק קולות של UNI שהועברו בעצמם או הועברו לכתובת אחרת לפני גוש {0}"
+msgid "Only votes that were self delegated or delegated to another address before block {0} are eligible for voting."
+msgstr "זכאים להצביע רק קולות של שהועברו בעצמם או הועברו לכתובת אחרת לפני גוש {0}"
 
 #: src/components/Web3ReactManager/index.tsx
 msgid "Oops! An unknown error occurred. Please refresh the page, or visit from another browser or device."
@@ -1320,12 +1320,12 @@ msgid "Read more"
 msgstr "קרא עוד"
 
 #: src/pages/Earn/index.tsx
-msgid "Read more about UNI"
-msgstr "קרא עוד על UNI"
+msgid "Read more about"
+msgstr "קרא עוד על"
 
 #: src/pages/Vote/index.tsx
-msgid "Read more about Uniswap governance"
-msgstr "קרא עוד על ממשל Uniswap"
+msgid "Read more about Swapbay governance"
+msgstr "קרא עוד על ממשל Swapbay"
 
 #: src/pages/Pool/v2.tsx
 msgid "Read more about providing liquidity"
@@ -1375,8 +1375,8 @@ msgid "Remove {0} {1} and {2} {3}"
 msgstr "הסר {0} {1} ו {2} {3}"
 
 #: src/pages/RemoveLiquidity/V3.tsx
-msgid "Remove {0}/{1} V3 liquidity"
-msgstr "הסר {0}/{1} נזילות V3"
+msgid "Remove {0}/{1} liquidity"
+msgstr "הסר {0}/{1} נזילות"
 
 #: src/pages/RemoveLiquidity/index.tsx
 msgid "Removing {0} {1} and {2} {3}"
@@ -1413,8 +1413,8 @@ msgid "Select a token"
 msgstr "בחר אסימון"
 
 #: src/pages/PoolFinder/index.tsx
-msgid "Select a token to find your v2 liquidity."
-msgstr "בחר אסימון כדי למצוא את נזילות ה- v2 שלך."
+msgid "Select a token to find your liquidity."
+msgstr "בחר אסימון כדי למצוא את נזילות ה- שלך."
 
 #: src/pages/CreateProposal/ProposalActionSelector.tsx
 msgid "Select an action"
@@ -1480,8 +1480,8 @@ msgid "Status"
 msgstr "סטָטוּס"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Step 1. Get UNI-V2 Liquidity tokens"
-msgstr "שלב 1. קבל תווי נזילות של UNI-V2"
+msgid "Step 1. Get Liquidity tokens"
+msgstr "שלב 1. קבל תווי נזילות של"
 
 #: src/state/governance/hooks.ts
 msgid "Submitted new proposal"
@@ -1533,16 +1533,16 @@ msgid "Switch to L1 (Mainnet)"
 msgstr "עבור ל- L1 (Mainnet)"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "Thanks for being part of the Uniswap community <0/>"
-msgstr "תודה שהיית חלק מקהילת Uniswap <0 />"
+msgid "Thanks for being part of the Swapbay community <0/>"
+msgstr "תודה שהיית חלק מקהילת Swapbay <0 />"
 
 #: src/components/FeeSelector/index.tsx
 msgid "The % you will earn in fees."
 msgstr "האחוזים שתרוויחו בעמלות."
 
 #: src/hooks/useSwapCallback.ts
-msgid "The Uniswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
-msgstr "המשתנה של Uniswap x * y = k לא הסתפק בהחלפה. זה בדרך כלל אומר שאחד מהאסימונים שאתה מחליף משלב התנהגות מותאמת אישית בהעברה."
+msgid "The Swapbay invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
+msgstr "המשתנה של Swapbay x * y = k לא הסתפק בהחלפה. זה בדרך כלל אומר שאחד מהאסימונים שאתה מחליף משלב התנהגות מותאמת אישית בהעברה."
 
 #: src/hooks/useSwapCallback.ts
 msgid "The input token cannot be transferred. There may be an issue with the input token."
@@ -1557,8 +1557,8 @@ msgid "The output token cannot be transferred. There may be an issue with the ou
 msgstr "לא ניתן להעביר את אסימון הפלט. ייתכן שיש בעיה באסימון הפלט."
 
 #: src/hooks/useSwapCallback.ts
-msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "לא ניתן להעביר את אסימון הפלט. ייתכן שיש בעיה באסימון הפלט. הערה: עמלה על אסימון העברה וריבוס אינם תואמים ל- Uniswap V3."
+msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Swapbay ."
+msgstr "לא ניתן להעביר את אסימון הפלט. ייתכן שיש בעיה באסימון הפלט. הערה: עמלה על אסימון העברה וריבוס אינם תואמים ל- Swapbay ."
 
 #: src/components/Badge/RangeBadge.tsx
 msgid "The price of this pool is outside of your selected range. Your position is not currently earning fees."
@@ -1586,12 +1586,12 @@ msgstr "אסימונים אלה משויכים בדרך כלל לאסימוני�
 
 #: src/components/NetworkAlert/AddLiquidityNetworkAlert.tsx
 #: src/components/NetworkAlert/MinimalNetworkAlert.tsx
-msgid "This is an alpha release of Uniswap on the {0} network."
-msgstr "זהו שחרור אלפא של Uniswap ברשת {0}"
+msgid "This is an alpha release of Swapbay on the {0} network."
+msgstr "זהו שחרור אלפא של Swapbay ברשת {0}"
 
 #: src/components/NetworkAlert/NetworkAlert.tsx
-msgid "This is an alpha release of Uniswap on the {0} network. You must bridge L1 assets to the network to swap them."
-msgstr "זהו שחרור אלפא של Uniswap ברשת {0} עליך לגשר על נכסי L1 לרשת כדי להחליף אותם."
+msgid "This is an alpha release of Swapbay on the {0} network. You must bridge L1 assets to the network to swap them."
+msgstr "זהו שחרור אלפא של Swapbay ברשת {0} עליך לגשר על נכסי L1 לרשת כדי להחליף אותם."
 
 #: src/pages/AddLiquidity/index.tsx
 msgid "This pool must be initialized before you can add liquidity. To initialize, select a starting price for the pool. Then, enter your liquidity price range and deposit amount. Gas fees will be higher than usual due to the initialization transaction."
@@ -1606,12 +1606,12 @@ msgid "This token doesn't appear on the active token list(s). Make sure this is 
 msgstr "אסימון זה אינו מופיע ברשימות האסימונים הפעילות. ודא שזה האסימון שאתה רוצה לסחור בו."
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "This tool will safely migrate your {0} liquidity to V3. The process is completely trustless thanks to the"
-msgstr "כלי זה יעביר בבטחה את נזילות {0} שלך ל- V3. התהליך חסר אמון לחלוטין בזכות"
+msgid "This tool will safely migrate your {0} liquidity to. The process is completely trustless thanks to the"
+msgstr "כלי זה יעביר בבטחה את נזילות {0} שלך ל-. התהליך חסר אמון לחלוטין בזכות"
 
 #: src/hooks/useSwapCallback.ts
-msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "עסקה זו לא תצליח בגלל תנועת מחירים. נסה להגביר את סובלנות ההחלקה שלך. הערה: עמלה על אסימון העברה ומיקום מחדש אינם תואמים ל- Uniswap V3."
+msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Swapbay ."
+msgstr "עסקה זו לא תצליח בגלל תנועת מחירים. נסה להגביר את סובלנות ההחלקה שלך. הערה: עמלה על אסימון העברה ומיקום מחדש אינם תואמים ל- Swapbay ."
 
 #: src/hooks/useSwapCallback.ts
 msgid "This transaction will not succeed either due to price movement or fee on transfer. Try increasing your slippage tolerance."
@@ -1696,37 +1696,37 @@ msgid "Turn On Expert Mode"
 msgstr "הפעל את מצב המומחה"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "UNI has arrived"
-msgstr "UNI הגיע"
+msgid "has arrived"
+msgstr "הגיע"
 
 #: src/components/Header/UniBalanceContent.tsx
-msgid "UNI in circulation:"
-msgstr "UNI במחזור:"
+msgid "in circulation:"
+msgstr "במחזור:"
 
 #: src/components/Header/UniBalanceContent.tsx
-msgid "UNI price:"
-msgstr "מחיר UNI:"
+msgid "price:"
+msgstr "מחיר:"
 
 #: src/pages/Vote/index.tsx
-msgid "UNI tokens represent voting shares in Uniswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
-msgstr "אסימונים של UNI מייצגים מניות הצבעה בממשל Uniswap. אתה יכול להצביע על כל הצעה בעצמך או להאציל את קולותיך לצד שלישי."
+msgid "tokens represent voting shares in Swapbay governance. You can vote on each proposal yourself or delegate your votes to a third party."
+msgstr "אסימונים של מייצגים מניות הצבעה בממשל Swapbay. אתה יכול להצביע על כל הצעה בעצמך או להאציל את קולותיך לצד שלישי."
 
 #: src/pages/RemoveLiquidity/index.tsx
-msgid "UNI {0}/{1} Burned"
-msgstr "UNI {0}/{1} שרופה"
+msgid "{0}/{1} Burned"
+msgstr "{0}/{1} שרופה"
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 LP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
-msgstr "נדרשים אסימונים של UNI-V2 LP. לאחר שהוספת נזילות {0}-{1} תוכל להניח את אסימוני הנזילות שלך בדף זה."
+msgid "LP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
+msgstr "נדרשים אסימונים של LP. לאחר שהוספת נזילות {0}-{1} תוכל להניח את אסימוני הנזילות שלך בדף זה."
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 {0}-{1}"
-msgstr "UNI-V2 {0}-{1}"
+msgid "{0}-{1}"
+msgstr "{0}-{1}"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Unclaimed UNI"
-msgstr "UNI שלא נדרש"
+msgid "Unclaimed"
+msgstr "שלא נדרש"
 
 #: src/pages/Pool/PositionPage.tsx
 msgid "Unclaimed fees"
@@ -1741,27 +1741,27 @@ msgid "Undetermined"
 msgstr "לא נקבע"
 
 #: src/pages/Vote/index.tsx
-msgid "Uniswap Governance"
+msgid "Swapbay Governance"
 msgstr "ממשל לא מוחלף"
 
 #: src/components/SwitchLocaleLink/index.tsx
-msgid "Uniswap available in: <0>{0}</0>"
-msgstr "Uniswap זמין ב: <0>{0}</0>"
+msgid "Swapbay available in: <0>{0}</0>"
+msgstr "Swapbay זמין ב: <0>{0}</0>"
 
 #: src/components/vote/ProposalEmptyState.tsx
-msgid "Uniswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
+msgid "Swapbay governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
 msgstr "ממשל ללא החלפה זמין רק בשכבה 1. העבר את הרשת שלך ל- Ethereum Mainnet כדי להציג הצעות והצבעה."
 
 #: src/pages/Earn/index.tsx
-msgid "Uniswap liquidity mining"
+msgid "Swapbay liquidity mining"
 msgstr "כריית נזילות ללא החלפה"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "Uniswap migration contract↗"
+msgid "Swapbay migration contract↗"
 msgstr "חוזה הגירה מביטול החלפה↗"
 
 #: src/components/NetworkAlert/NetworkAlert.tsx
-msgid "Uniswap on {0}"
+msgid "Swapbay on {0}"
 msgstr "ביטול החלפה ב- {0}"
 
 #: src/components/SearchModal/ImportToken.tsx
@@ -1769,8 +1769,8 @@ msgid "Unknown Source"
 msgstr "מקור לא ידוע"
 
 #: src/hooks/useSwapCallback.ts
-msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "שגיאה לא ידועה{0}. נסה להגביר את סובלנות ההחלקה שלך. הערה: עמלה על אסימון העברה ומיקום מחדש אינם תואמים ל- Uniswap V3."
+msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Swapbay ."
+msgstr "שגיאה לא ידועה{0}. נסה להגביר את סובלנות ההחלקה שלך. הערה: עמלה על אסימון העברה ומיקום מחדש אינם תואמים ל- Swapbay ."
 
 #: src/pages/Vote/VotePage.tsx
 #: src/pages/Vote/index.tsx
@@ -1816,29 +1816,29 @@ msgid "User"
 msgstr "מִשׁתַמֵשׁ"
 
 #: src/pages/Pool/v2.tsx
-msgid "V2 is not available on Layer 2. Switch to Layer 1 Ethereum."
-msgstr "V2 אינו זמין בשכבה 2. עבור לשכבה 1 אתריום."
+msgid "is not available on Layer 2. Switch to Layer 1 Ethereum."
+msgstr "אינו זמין בשכבה 2. עבור לשכבה 1 אתריום."
 
 #: src/pages/Pool/index.tsx
-msgid "V2 liquidity"
-msgstr "נזילות V2"
+msgid "liquidity"
+msgstr "נזילות"
 
 #: src/pages/Swap/index.tsx
-msgid "V3"
-msgstr "V3"
+msgid 
+msgstr 
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "V3 {0} Price:"
-msgstr "מחיר V3 {0}"
+msgid "{0} Price:"
+msgstr "מחיר {0}"
 
 #: src/components/Header/UniBalanceContent.tsx
-msgid "View UNI Analytics"
-msgstr "צפה ב- UNI Analytics"
+msgid "View Analytics"
+msgstr "צפה ב- Analytics"
 
 #: src/pages/Pool/index.tsx
-msgid "View V2 Liquidity"
-msgstr "צפה בנזילות V2"
+msgid "View Liquidity"
+msgstr "צפה בנזילות"
 
 #: src/components/PositionCard/index.tsx
 msgid "View accrued fees and analytics<0>↗</0>"
@@ -1914,7 +1914,7 @@ msgid "Weekly Rewards"
 msgstr "תגמולים שבועיים"
 
 #: src/components/claim/AddressClaimModal.tsx
-msgid "Welcome to team Unicorn :)"
+msgid "Welcome to teamcorn :)"
 msgstr "ברוך הבא לצוות חד קרן :)"
 
 #: src/components/earn/ClaimRewardModal.tsx
@@ -1922,12 +1922,12 @@ msgid "When you claim without withdrawing your liquidity remains in the mining p
 msgstr "כאשר אתה טוען מבלי למשוך את הנזילות שלך נשאר בבריכת הכרייה."
 
 #: src/pages/Earn/Manage.tsx
-msgid "When you withdraw, the contract will automagically claim UNI on your behalf!"
-msgstr "כשתסוג, החוזה יטען אוטומטית את UNI בשמך!"
+msgid "When you withdraw, the contract will automagically claim on your behalf!"
+msgstr "כשתסוג, החוזה יטען אוטומטית את בשמך!"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "When you withdraw, your UNI is claimed and your liquidity is removed from the mining pool."
-msgstr "כשאתה נסוג, תביעת ה- UNI שלך תובעת ונזילותך מוסרת ממאגר הכרייה."
+msgid "When you withdraw, your is claimed and your liquidity is removed from the mining pool."
+msgstr "כשאתה נסוג, תביעת ה- שלך תובעת ונזילותך מוסרת ממאגר הכרייה."
 
 #: src/components/earn/UnstakingModal.tsx
 #: src/pages/Earn/Manage.tsx
@@ -1944,12 +1944,12 @@ msgid "Withdraw deposited liquidity"
 msgstr "משיכת נזילות שהופקדה"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrawing {0} UNI-V2"
-msgstr "משיכת {0} UNI-V2"
+msgid "Withdrawing {0}"
+msgstr "משיכת {0}"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrew UNI-V2!"
-msgstr "משך את UNI-V2!"
+msgid "Withdrew!"
+msgstr "משך את!"
 
 #: src/pages/Swap/index.tsx
 msgid "Wrap"
@@ -1969,8 +1969,8 @@ msgid "You are creating a pool"
 msgstr "אתה יוצר בריכה"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You are the first liquidity provider for this Uniswap V3 pool. Your liquidity will migrate at the current {0} price."
-msgstr "אתה ספק הנזילות הראשון לבריכת Uniswap V3 זו. הנזילות שלך תעבור במחיר {0} הנוכחי."
+msgid "You are the first liquidity provider for this Swapbay pool. Your liquidity will migrate at the current {0} price."
+msgstr "אתה ספק הנזילות הראשון לבריכת Swapbay זו. הנזילות שלך תעבור במחיר {0} הנוכחי."
 
 #: src/pages/AddLiquidityV2/index.tsx
 msgid "You are the first liquidity provider."
@@ -2006,16 +2006,16 @@ msgid "You must connect an account."
 msgstr "עליך לחבר חשבון."
 
 #: src/pages/Swap/index.tsx
-msgid "You must give the Uniswap smart contracts permission to use your {0}. You only have to do this once per token."
-msgstr "עליך לתת לחוזים החכמים של Uniswap להשתמש ב- {0}שלך. אתה צריך לעשות זאת רק פעם אחת לכל אסימון."
+msgid "You must give the Swapbay smart contracts permission to use your {0}. You only have to do this once per token."
+msgstr "עליך לתת לחוזים החכמים של Swapbay להשתמש ב- {0}שלך. אתה צריך לעשות זאת רק פעם אחת לכל אסימון."
 
 #: src/pages/CreateProposal/index.tsx
 msgid "You must have {formattedProposalThreshold} votes to submit a proposal"
 msgstr "עליך {formattedProposalThreshold} קולות כדי להגיש הצעה"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You should only deposit liquidity into Uniswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
-msgstr "עליכם להפקיד נזילות רק ב- Uniswap V3 במחיר שלדעתכם נכון. <0/> אם נראה שהמחיר שגוי, באפשרותך להחליף כדי להזיז את המחיר או לחכות שמישהו אחר יעשה זאת."
+msgid "You should only deposit liquidity into Swapbay at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
+msgstr "עליכם להפקיד נזילות רק ב- Swapbay במחיר שלדעתכם נכון. <0/> אם נראה שהמחיר שגוי, באפשרותך להחליף כדי להזיז את המחיר או לחכות שמישהו אחר יעשה זאת."
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "You will also collect fees earned from this position."
@@ -2027,16 +2027,16 @@ msgid "You will receive"
 msgstr "אתה תקבל"
 
 #: src/components/Header/UniBalanceContent.tsx
-msgid "Your UNI Breakdown"
-msgstr "התמוטטות של ה- UNI שלך"
+msgid "Your Breakdown"
+msgstr "התמוטטות של ה- שלך"
 
 #: src/pages/Pool/v2.tsx
-msgid "Your V2 liquidity"
-msgstr "נזילות ה- V2 שלך"
+msgid "Your liquidity"
+msgstr "נזילות ה- שלך"
 
 #: src/pages/Pool/index.tsx
-msgid "Your V3 liquidity positions will appear here."
-msgstr "עמדות הנזילות שלך ב- V3 יופיעו כאן."
+msgid "Your liquidity positions will appear here."
+msgstr "עמדות הנזילות שלך ב- יופיעו כאן."
 
 #: src/pages/Earn/Manage.tsx
 msgid "Your liquidity deposits"
@@ -2114,8 +2114,8 @@ msgid "Your transactions will appear here..."
 msgstr "העסקאות שלך יופיעו כאן ..."
 
 #: src/pages/Earn/Manage.tsx
-msgid "Your unclaimed UNI"
-msgstr "ה-UNI שלך לא נדרש"
+msgid "Your unclaimed"
+msgstr "ה-שלך לא נדרש"
 
 #: src/components/Settings/index.tsx
 msgid "confirm"
@@ -2207,24 +2207,24 @@ msgstr "{0} בהמתנה"
 #: src/components/claim/ClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
-msgid "{0} UNI"
-msgstr "{0} UNI"
+msgid "{0}"
+msgstr "{0}"
 
 #: src/components/earn/PoolCard.tsx
 #: src/components/earn/PoolCard.tsx
 #: src/components/earn/StakingModal.tsx
 #: src/pages/Earn/Manage.tsx
 #: src/pages/Earn/Manage.tsx
-msgid "{0} UNI / week"
-msgstr "{0} UNI לשבוע"
+msgid "{0} / week"
+msgstr "{0} לשבוע"
 
 #: src/components/earn/StakingModal.tsx
-msgid "{0} UNI-V2"
-msgstr "{0} UNI-V2"
+msgid "{0}"
+msgstr "{0}"
 
 #: src/pages/Earn/Manage.tsx
-msgid "{0} UNI-V2 LP tokens available"
-msgstr "{0} UNI-V2 LP אסימונים זמינים"
+msgid "{0} LP tokens available"
+msgstr "{0} LP אסימונים זמינים"
 
 #: src/components/vote/VoteModal.tsx
 msgid "{0} Votes"
@@ -2287,12 +2287,12 @@ msgid "{0}/{1} LP Tokens"
 msgstr "{0}/{1} אסימוני LP"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "{SOCKS_AMOUNT} UNI"
-msgstr "{SOCKS_AMOUNT} UNI"
+msgid "{SOCKS_AMOUNT}"
+msgstr "{SOCKS_AMOUNT}"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "{USER_AMOUNT} UNI"
-msgstr "{USER_AMOUNT} UNI"
+msgid "{USER_AMOUNT}"
+msgstr "{USER_AMOUNT}"
 
 #: src/components/SearchModal/ManageLists.tsx
 msgid "{activeTokensOnThisChain} tokens"

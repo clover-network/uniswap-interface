@@ -1709,7 +1709,7 @@ msgstr "代币兑换率："
 
 #: src/pages/Vote/index.tsx
 msgid "tokens represent voting shares in Swapbay governance. You can vote on each proposal yourself or delegate your votes to a third party."
-msgstr "UNI代币代表了Swapbay治理中的投票份额。您可以自行为提案进行投票，或将您的投票权委托给第三方。"
+msgstr "代币代表了Swapbay治理中的投票份额。您可以自行为提案进行投票，或将您的投票权委托给第三方。"
 
 #: src/pages/RemoveLiquidity/index.tsx
 msgid "{0}/{1} Burned"

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: uniswap-interface\n"
+"Project-Id-Version: Swapbay-interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: 2021-09-16 03:04\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: uniswap-interface\n"
+"X-Crowdin-Project: Swapbay-interface\n"
 "X-Crowdin-Project-ID: 458284\n"
 "X-Crowdin-Language: th\n"
 "X-Crowdin-File: en-US.po\n"
@@ -55,8 +55,8 @@ msgstr "- ลบส่ง"
 #: src/components/earn/PoolCard.tsx
 #: src/pages/Earn/Manage.tsx
 #: src/pages/Earn/Manage.tsx
-msgid "0 UNI / week"
-msgstr "0 UNI / สัปดาห์"
+msgid "0 / week"
+msgstr "0 / สัปดาห์"
 
 #: src/components/FeeSelector/index.tsx
 msgid "0.05% fee"
@@ -96,8 +96,8 @@ msgid "<0>Account analytics and accrued fees</0><1> ↗ </1>"
 msgstr "<0>การวิเคราะห์บัญชีและค่าธรรมเนียมค้างจ่าย</0> <1></1>"
 
 #: src/pages/Swap/index.tsx
-msgid "<0>Back to </0>V3"
-msgstr "<0>กลับไปที่</0> V3"
+msgid "<0>Back to </0>"
+msgstr "<0>กลับไปที่</0>"
 
 #: src/pages/AddLiquidity/index.tsx
 msgid "<0>Current Price:</0><1><2/></1><3>{0} per {1}</3>"
@@ -112,8 +112,8 @@ msgid "<0>Tip:</0> Select an action and describe your proposal for the community
 msgstr "<0>เคล็ดลับ:</0> เลือกการดำเนินการและอธิบายข้อเสนอของคุณสำหรับชุมชน ไม่สามารถแก้ไขข้อเสนอได้หลังจากส่ง ดังนั้นโปรดตรวจสอบข้อมูลทั้งหมดก่อนส่ง ระยะเวลาการลงคะแนนจะเริ่มทันทีและมีอายุ 7 วัน หากต้องการเสนอการดำเนินการที่กำหนดเอง <1>อ่านเอกสาร</1> ."
 
 #: src/pages/PoolFinder/index.tsx
-msgid "<0>Tip:</0> Use this tool to find v2 pools that don't automatically appear in the interface."
-msgstr "<0>เคล็ดลับ:</0> ใช้เครื่องมือนี้เพื่อค้นหาพูล v2 ที่ไม่ปรากฏในอินเทอร์เฟซโดยอัตโนมัติ"
+msgid "<0>Tip:</0> Use this tool to find pools that don't automatically appear in the interface."
+msgstr "<0>เคล็ดลับ:</0> ใช้เครื่องมือนี้เพื่อค้นหาพูล ที่ไม่ปรากฏในอินเทอร์เฟซโดยอัตโนมัติ"
 
 #: src/pages/AddLiquidityV2/index.tsx
 msgid "<0>Tip:</0> When you add liquidity, you will receive pool tokens representing your position. These tokens automatically earn fees proportional to your share of the pool, and can be redeemed at any time."
@@ -124,12 +124,12 @@ msgid "<0>Unlock voting</0> to prepare for the next proposal."
 msgstr "<0>ปลดล็อกการโหวต</0> เพื่อเตรียมรับข้อเสนอต่อไป"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "<0>🎉 </0>Welcome to team Unicorn :) <1>🎉</1>"
+msgid "<0>🎉 </0>Welcome to teamcorn :) <1>🎉</1>"
 msgstr "<0>🎉</0> ยินดีต้อนรับสู่ทีมยูนิคอร์น :) <1>🎉</1>"
 
 #: src/pages/Vote/index.tsx
-msgid "A minimum threshold of 0.25% of the total UNI supply is required to submit proposals"
-msgstr "เกณฑ์ขั้นต่ำ 0.25% ของอุปทาน UNI ทั้งหมดจะต้องส่งข้อเสนอ"
+msgid "A minimum threshold of 0.25% of the total supply is required to submit proposals"
+msgstr "เกณฑ์ขั้นต่ำ 0.25% ของอุปทาน ทั้งหมดจะต้องส่งข้อเสนอ"
 
 #: src/components/Menu/index.tsx
 msgid "About"
@@ -164,8 +164,8 @@ msgid "Add Liquidity"
 msgstr "เพิ่มสภาพคล่อง"
 
 #: src/pages/Pool/v2.tsx
-msgid "Add V2 Liquidity"
-msgstr "เพิ่มสภาพคล่อง V2"
+msgid "Add Liquidity"
+msgstr "เพิ่มสภาพคล่อง"
 
 #: src/pages/PoolFinder/index.tsx
 msgid "Add liquidity."
@@ -189,7 +189,7 @@ msgid "Add {0}-{1} liquidity"
 msgstr "เพิ่มสภาพคล่อง {0}-{1}"
 
 #: src/pages/AddLiquidity/index.tsx
-msgid "Add {0}/{1} V3 liquidity"
+msgid "Add {0}/{1} liquidity"
 msgstr "เพิ่มสภาพคล่อง {0}/{1}"
 
 #: src/components/TransactionConfirmationModal/index.tsx
@@ -213,8 +213,8 @@ msgid "Allow high price impact trades and skip the confirm screen. Use at your o
 msgstr "อนุญาตให้ทำการซื้อขายที่กระทบราคาสูงและข้ามหน้าจอยืนยัน ใช้ความเสี่ยงของคุณเอง"
 
 #: src/pages/Swap/index.tsx
-msgid "Allow the Uniswap Protocol to use your {0}"
-msgstr "อนุญาตให้ Uniswap Protocol ใช้ {0}"
+msgid "Allow the Swapbay Protocol to use your {0}"
+msgstr "อนุญาตให้ Swapbay Protocol ใช้ {0}"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allowed"
@@ -225,8 +225,8 @@ msgid "Amount"
 msgstr "จำนวน"
 
 #: src/hooks/useSwapCallback.ts
-msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "เกิดข้อผิดพลาดขณะพยายามดำเนินการสลับนี้ คุณอาจต้องเพิ่มความทนทานต่อการเลื่อนหลุด หากไม่ได้ผล อาจมีความไม่เข้ากันกับโทเค็นที่คุณกำลังซื้อขาย หมายเหตุ: ค่าธรรมเนียมการโอนและโทเค็นการรีเบสเข้ากันไม่ได้กับ Uniswap V3"
+msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Swapbay."
+msgstr "เกิดข้อผิดพลาดขณะพยายามดำเนินการสลับนี้ คุณอาจต้องเพิ่มความทนทานต่อการเลื่อนหลุด หากไม่ได้ผล อาจมีความไม่เข้ากันกับโทเค็นที่คุณกำลังซื้อขาย หมายเหตุ: ค่าธรรมเนียมการโอนและโทเค็นการรีเบสเข้ากันไม่ได้กับ Swapbay"
 
 #: src/components/Menu/index.tsx
 msgid "Analytics"
@@ -269,8 +269,8 @@ msgid "Are you sure?"
 msgstr "คุณแน่ใจไหม?"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "As a member of the Uniswap community you may claim UNI to be used for voting and governance.<0/><1/><2>Read more about UNI</2>"
-msgstr "ในฐานะสมาชิกของชุมชน Uniswap คุณอาจอ้างว่า UNI ใช้สำหรับการลงคะแนนและการกำกับดูแล<0/><1/><2>อ่านเพิ่มเติมเกี่ยวกับ UNI</2>"
+msgid "As a member of the Swapbay community you may claim to be used for voting and governance.<0/><1/><2>Read more about</2>"
+msgstr "ในฐานะสมาชิกของชุมชน Swapbay คุณอาจอ้างว่า ใช้สำหรับการลงคะแนนและการกำกับดูแล<0/><1/><2>อ่านเพิ่มเติมเกี่ยวกับ</2>"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "At least {0} {1} and {2} {3} will be refunded to your wallet due to selected price range."
@@ -324,8 +324,8 @@ msgid "By adding this list you are implicitly trusting that the data is correct.
 msgstr "การเพิ่มรายการนี้แสดงว่าคุณเชื่อมั่นโดยปริยายว่าข้อมูลถูกต้อง ใครๆ ก็สร้างรายการได้ ซึ่งรวมถึงการสร้างเวอร์ชันปลอมของรายการที่มีอยู่และรายการที่อ้างว่าเป็นตัวแทนของโครงการที่ไม่มีอยู่"
 
 #: src/components/WalletModal/index.tsx
-msgid "By connecting a wallet, you agree to Uniswap Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the <1>Uniswap protocol disclaimer</1>."
-msgstr "การเชื่อมต่อกระเป๋าเงินหมายความว่าคุณยอมรับ <0>ข้อกำหนดในการให้บริการของ Uniswap Labs</0> และรับทราบว่าคุณได้อ่านและทำความเข้าใจ <1>ข้อจำกัดความรับผิดชอบของโปรโตคอล Uniswap</1> ."
+msgid "By connecting a wallet, you agree to Swapbay Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the <1>Swapbay protocol disclaimer</1>."
+msgstr "การเชื่อมต่อกระเป๋าเงินหมายความว่าคุณยอมรับ <0>ข้อกำหนดในการให้บริการของ Swapbay Labs</0> และรับทราบว่าคุณได้อ่านและทำความเข้าใจ <1>ข้อจำกัดความรับผิดชอบของโปรโตคอล Swapbay</1> ."
 
 #: src/pages/Vote/styled.tsx
 msgid "Canceled"
@@ -348,8 +348,8 @@ msgid "Check network status"
 msgstr "ตรวจสอบสถานะเครือข่าย"
 
 #: src/pages/Pool/CTACards.tsx
-msgid "Check out our v3 LP walkthrough and migration guides."
-msgstr "ดูคำแนะนำการใช้งาน v3 LP และคู่มือการย้ายข้อมูล"
+msgid "Check out our LP walkthrough and migration guides."
+msgstr "ดูคำแนะนำการใช้งาน LP และคู่มือการย้ายข้อมูล"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/ClaimRewardModal.tsx
@@ -362,25 +362,25 @@ msgstr "เรียกร้อง"
 #: src/components/claim/AddressClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
-msgid "Claim UNI"
-msgstr "รับสิทธิ์ UNI"
+msgid "Claim"
+msgstr "รับสิทธิ์"
 
 #: src/components/claim/AddressClaimModal.tsx
-msgid "Claim UNI Token"
-msgstr "รับโทเค็น UNI"
+msgid "Claim Token"
+msgstr "รับโทเค็น"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/ClaimRewardModal.tsx
-msgid "Claim accumulated UNI rewards"
-msgstr "รับรางวัล UNI สะสม"
+msgid "Claim accumulated rewards"
+msgstr "รับรางวัล สะสม"
 
 #: src/pages/Pool/PositionPage.tsx
 msgid "Claim fees"
 msgstr "ค่าธรรมเนียมการเรียกร้อง"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "Claim your UNI tokens"
-msgstr "รับโทเค็น UNI ของคุณ"
+msgid "Claim your tokens"
+msgstr "รับโทเค็น ของคุณ"
 
 #: src/components/claim/AddressClaimModal.tsx
 msgid "Claimed"
@@ -388,21 +388,21 @@ msgstr "อ้างสิทธิ์"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Claimed UNI!"
-msgstr "อ้างสิทธิ์ UNI!"
+msgid "Claimed!"
+msgstr "อ้างสิทธิ์!"
 
 #: src/components/claim/AddressClaimModal.tsx
 msgid "Claiming"
 msgstr "อ้างสิทธิ์"
 
 #: src/components/Header/index.tsx
-msgid "Claiming UNI"
-msgstr "อ้างสิทธิ์ UNI"
+msgid "Claiming"
+msgstr "อ้างสิทธิ์"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Claiming {0} UNI"
-msgstr "รับสิทธิ์ {0} UNI"
+msgid "Claiming {0}"
+msgstr "รับสิทธิ์ {0}"
 
 #: src/pages/AddLiquidity/index.tsx
 msgid "Clear All"
@@ -517,8 +517,8 @@ msgid "Connect to a wallet to find pools"
 msgstr "เชื่อมต่อกับกระเป๋าเงินเพื่อค้นหาพูล"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Connect to a wallet to view your V2 liquidity."
-msgstr "เชื่อมต่อกับกระเป๋าเงินเพื่อดูสภาพคล่อง V2 ของคุณ"
+msgid "Connect to a wallet to view your liquidity."
+msgstr "เชื่อมต่อกับกระเป๋าเงินเพื่อดูสภาพคล่อง ของคุณ"
 
 #: src/pages/Pool/v2.tsx
 msgid "Connect to a wallet to view your liquidity."
@@ -564,7 +564,7 @@ msgid "Create an issue on GitHub"
 msgstr "สร้างปัญหาบน GitHub"
 
 #: src/pages/AddLiquidity/index.tsx
-msgid "Create pool and add {0}/{1} V3 liquidity"
+msgid "Create pool and add {0}/{1} liquidity"
 msgstr "สร้างกลุ่มและเพิ่มสภาพคล่อง {0}/{1}"
 
 #: src/pages/PoolFinder/index.tsx
@@ -572,8 +572,8 @@ msgid "Create pool."
 msgstr "สร้างพูล"
 
 #: src/pages/AddLiquidity/index.tsx
-msgid "Create {0}/{1} V3 pool"
-msgstr "สร้างพูล V3 {0}/{1}"
+msgid "Create {0}/{1} pool"
+msgstr "สร้างพูล {0}/{1}"
 
 #: src/components/PositionPreview/index.tsx
 #: src/pages/Pool/PositionPage.tsx
@@ -620,8 +620,8 @@ msgid "Deposit Amounts"
 msgstr "จำนวนเงินฝาก"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Deposit UNI-V2 LP Tokens"
-msgstr "ฝากโทเค็น LP ของ UNI-V2"
+msgid "Deposit-LP Tokens"
+msgstr "ฝากโทเค็น LP ของ"
 
 #: src/components/earn/StakingModal.tsx
 msgid "Deposit liquidity"
@@ -634,16 +634,16 @@ msgid "Deposit to {0}"
 msgstr "ฝากถึง {0}"
 
 #: src/pages/Earn/index.tsx
-msgid "Deposit your Liquidity Provider tokens to receive UNI, the Uniswap protocol governance token."
-msgstr "ฝากโทเค็นผู้ให้บริการสภาพคล่องของคุณเพื่อรับ UNI ซึ่งเป็นโทเค็นการกำกับดูแลโปรโตคอล Uniswap"
+msgid "Deposit your Liquidity Provider tokens to receive, the Swapbay protocol governance token."
+msgstr "ฝากโทเค็นผู้ให้บริการสภาพคล่องของคุณเพื่อรับ ซึ่งเป็นโทเค็นการกำกับดูแลโปรโตคอล Swapbay"
 
 #: src/components/earn/UnstakingModal.tsx
 msgid "Deposited liquidity:"
 msgstr "สภาพคล่องเงินฝาก:"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Deposited {0} UNI-V2"
-msgstr "ฝาก {0} UNI-V2"
+msgid "Deposited {0}"
+msgstr "ฝาก {0}"
 
 #: src/components/earn/StakingModal.tsx
 msgid "Depositing Liquidity"
@@ -682,12 +682,12 @@ msgid "Docs"
 msgstr "เอกสาร"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Don’t see one of your v2 positions? <0>Import it.</0>"
-msgstr "ไม่เห็นหนึ่งในตำแหน่ง v2 ของคุณใช่หรือไม่ <0>นำเข้า.</0>"
+msgid "Don’t see one of your positions? <0>Import it.</0>"
+msgstr "ไม่เห็นหนึ่งในตำแหน่ง ของคุณใช่หรือไม่ <0>นำเข้า.</0>"
 
 #: src/components/vote/DelegateModal.tsx
-msgid "Earned UNI tokens represent voting shares in Uniswap governance."
-msgstr "โทเค็น UNI ที่ได้รับแสดงถึงการลงคะแนนเสียงในการกำกับดูแล Uniswap"
+msgid "Earned tokens represent voting shares in Swapbay governance."
+msgstr "โทเค็น ที่ได้รับแสดงถึงการลงคะแนนเสียงในการกำกับดูแล Swapbay"
 
 #: src/components/FeeSelector/index.tsx
 msgid "Edit"
@@ -710,8 +710,8 @@ msgid "Enter a valid slippage percentage"
 msgstr "ป้อนเปอร์เซ็นต์การเลื่อนหลุดที่ถูกต้อง"
 
 #: src/components/claim/AddressClaimModal.tsx
-msgid "Enter an address to trigger a UNI claim. If the address has any claimable UNI it will be sent to them on submission."
-msgstr "ป้อนที่อยู่เพื่อเรียกใช้การอ้างสิทธิ์ของ UNI หากที่อยู่มี UNI ที่อ้างสิทธิ์ได้ จะส่งไปให้เมื่อส่ง"
+msgid "Enter an address to trigger a claim. If the address has any claimable it will be sent to them on submission."
+msgstr "ป้อนที่อยู่เพื่อเรียกใช้การอ้างสิทธิ์ของ หากที่อยู่มี ที่อ้างสิทธิ์ได้ จะส่งไปให้เมื่อส่ง"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
@@ -767,8 +767,8 @@ msgid "Expired"
 msgstr "หมดอายุ"
 
 #: src/pages/Pool/CTACards.tsx
-msgid "Explore popular pools on Uniswap Analytics."
-msgstr "สำรวจกลุ่มยอดนิยมบน Uniswap Analytics"
+msgid "Explore popular pools on Swapbay Analytics."
+msgstr "สำรวจกลุ่มยอดนิยมบน Swapbay Analytics"
 
 #: src/components/PositionPreview/index.tsx
 msgid "Fee Tier"
@@ -783,8 +783,8 @@ msgid "For"
 msgstr "สำหรับ"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "For each pool shown below, click migrate to remove your liquidity from Uniswap V2 and deposit it into Uniswap V3."
-msgstr "สำหรับแต่ละกลุ่มที่แสดงด้านล่าง ให้คลิกย้ายเพื่อลบสภาพคล่องของคุณออกจาก Uniswap V2 และฝากเข้า Uniswap V3"
+msgid "For each pool shown below, click migrate to remove your liquidity from Swapbay and deposit it into Swapbay."
+msgstr "สำหรับแต่ละกลุ่มที่แสดงด้านล่าง ให้คลิกย้ายเพื่อลบสภาพคล่องของคุณออกจาก Swapbay และฝากเข้า Swapbay"
 
 #: src/components/swap/SwapModalHeader.tsx
 #: src/pages/Swap/index.tsx
@@ -840,8 +840,8 @@ msgid "Import Pool"
 msgstr "นำเข้าพูล"
 
 #: src/components/NavigationTabs/index.tsx
-msgid "Import V2 Pool"
-msgstr "นำเข้า V2 Pool"
+msgid "Import Pool"
+msgstr "นำเข้า Pool"
 
 #: src/components/SearchModal/ImportList.tsx
 msgid "Import at your own risk"
@@ -1032,17 +1032,17 @@ msgid "Migrate Liquidity"
 msgstr "ย้ายสภาพคล่อง"
 
 #: src/pages/Pool/v2.tsx
-msgid "Migrate Liquidity to V3"
-msgstr "ย้ายสภาพคล่องไปที่ V3"
+msgid "Migrate Liquidity to"
+msgstr "ย้ายสภาพคล่องไปที่"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 #: src/pages/MigrateV2/index.tsx
-msgid "Migrate V2 Liquidity"
-msgstr "โยกย้ายสภาพคล่อง V2"
+msgid "Migrate Liquidity"
+msgstr "โยกย้ายสภาพคล่อง"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Migrate your liquidity tokens from Uniswap V2 to Uniswap V3."
-msgstr "ย้ายโทเค็นสภาพคล่องของคุณจาก Uniswap V2 เป็น Uniswap V3"
+msgid "Migrate your liquidity tokens from Swapbay to Swapbay."
+msgstr "ย้ายโทเค็นสภาพคล่องของคุณจาก Swapbay เป็น Swapbay"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Migrating"
@@ -1078,8 +1078,8 @@ msgid "New Position"
 msgstr "ตำแหน่งใหม่"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "No V2 Liquidity found."
-msgstr "ไม่พบสภาพคล่อง V2"
+msgid "No Liquidity found."
+msgstr "ไม่พบสภาพคล่อง"
 
 #: src/pages/Earn/index.tsx
 #: src/pages/Earn/index.tsx
@@ -1135,8 +1135,8 @@ msgid "Once you are happy with the rate click supply to review."
 msgstr "เมื่อคุณพอใจกับอัตราคลิกอุปทานเพื่อตรวจสอบ"
 
 #: src/pages/Vote/VotePage.tsx
-msgid "Only UNI votes that were self delegated or delegated to another address before block {0} are eligible for voting."
-msgstr "เฉพาะคะแนนโหวตของ UNI ที่มอบหมายด้วยตนเองหรือมอบหมายไปยังที่อยู่อื่นก่อนบล็อก {0} เท่านั้นที่มีสิทธิ์ลงคะแนน"
+msgid "Only votes that were self delegated or delegated to another address before block {0} are eligible for voting."
+msgstr "เฉพาะคะแนนโหวตของ ที่มอบหมายด้วยตนเองหรือมอบหมายไปยังที่อยู่อื่นก่อนบล็อก {0} เท่านั้นที่มีสิทธิ์ลงคะแนน"
 
 #: src/components/Web3ReactManager/index.tsx
 msgid "Oops! An unknown error occurred. Please refresh the page, or visit from another browser or device."
@@ -1320,12 +1320,12 @@ msgid "Read more"
 msgstr "อ่านเพิ่มเติม"
 
 #: src/pages/Earn/index.tsx
-msgid "Read more about UNI"
-msgstr "อ่านเพิ่มเติมเกี่ยวกับ UNI"
+msgid "Read more about"
+msgstr "อ่านเพิ่มเติมเกี่ยวกับ"
 
 #: src/pages/Vote/index.tsx
-msgid "Read more about Uniswap governance"
-msgstr "อ่านเพิ่มเติมเกี่ยวกับการกำกับดูแล Uniswap"
+msgid "Read more about Swapbay governance"
+msgstr "อ่านเพิ่มเติมเกี่ยวกับการกำกับดูแล Swapbay"
 
 #: src/pages/Pool/v2.tsx
 msgid "Read more about providing liquidity"
@@ -1375,8 +1375,8 @@ msgid "Remove {0} {1} and {2} {3}"
 msgstr "ลบ {0} {1} และ {2} {3}"
 
 #: src/pages/RemoveLiquidity/V3.tsx
-msgid "Remove {0}/{1} V3 liquidity"
-msgstr "ลบ {0}/{1} V3 สภาพคล่อง"
+msgid "Remove {0}/{1} liquidity"
+msgstr "ลบ {0}/{1} สภาพคล่อง"
 
 #: src/pages/RemoveLiquidity/index.tsx
 msgid "Removing {0} {1} and {2} {3}"
@@ -1413,8 +1413,8 @@ msgid "Select a token"
 msgstr "เลือกโทเค็น"
 
 #: src/pages/PoolFinder/index.tsx
-msgid "Select a token to find your v2 liquidity."
-msgstr "เลือกโทเค็นเพื่อค้นหาสภาพคล่อง v2 ของคุณ"
+msgid "Select a token to find your liquidity."
+msgstr "เลือกโทเค็นเพื่อค้นหาสภาพคล่อง ของคุณ"
 
 #: src/pages/CreateProposal/ProposalActionSelector.tsx
 msgid "Select an action"
@@ -1480,8 +1480,8 @@ msgid "Status"
 msgstr "สถานะ"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Step 1. Get UNI-V2 Liquidity tokens"
-msgstr "ขั้นตอนที่ 1 รับโทเค็นสภาพคล่อง UNI-V2"
+msgid "Step 1. Get-Liquidity tokens"
+msgstr "ขั้นตอนที่ 1 รับโทเค็นสภาพคล่อง"
 
 #: src/state/governance/hooks.ts
 msgid "Submitted new proposal"
@@ -1533,16 +1533,16 @@ msgid "Switch to L1 (Mainnet)"
 msgstr "เปลี่ยนเป็น L1 (เมนเน็ต)"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "Thanks for being part of the Uniswap community <0/>"
-msgstr "ขอบคุณที่เป็นส่วนหนึ่งของชุมชน Uniswap <0/>"
+msgid "Thanks for being part of the Swapbay community <0/>"
+msgstr "ขอบคุณที่เป็นส่วนหนึ่งของชุมชน Swapbay <0/>"
 
 #: src/components/FeeSelector/index.tsx
 msgid "The % you will earn in fees."
 msgstr "% ที่คุณจะได้รับเป็นค่าธรรมเนียม"
 
 #: src/hooks/useSwapCallback.ts
-msgid "The Uniswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
-msgstr "ค่าคงที่ Uniswap x*y=k ไม่พอใจโดยการแลกเปลี่ยน ซึ่งมักจะหมายถึงหนึ่งในโทเค็นที่คุณกำลังแลกเปลี่ยนรวมลักษณะการทำงานที่กำหนดเองในการโอน"
+msgid "The Swapbay invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
+msgstr "ค่าคงที่ Swapbay x*y=k ไม่พอใจโดยการแลกเปลี่ยน ซึ่งมักจะหมายถึงหนึ่งในโทเค็นที่คุณกำลังแลกเปลี่ยนรวมลักษณะการทำงานที่กำหนดเองในการโอน"
 
 #: src/hooks/useSwapCallback.ts
 msgid "The input token cannot be transferred. There may be an issue with the input token."
@@ -1557,8 +1557,8 @@ msgid "The output token cannot be transferred. There may be an issue with the ou
 msgstr "ไม่สามารถโอนโทเค็นเอาต์พุตได้ อาจมีปัญหากับโทเค็นเอาต์พุต"
 
 #: src/hooks/useSwapCallback.ts
-msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "ไม่สามารถโอนโทเค็นเอาต์พุตได้ อาจมีปัญหากับโทเค็นเอาต์พุต หมายเหตุ: ค่าธรรมเนียมการโอนและโทเค็นการรีเบสเข้ากันไม่ได้กับ Uniswap V3"
+msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Swapbay."
+msgstr "ไม่สามารถโอนโทเค็นเอาต์พุตได้ อาจมีปัญหากับโทเค็นเอาต์พุต หมายเหตุ: ค่าธรรมเนียมการโอนและโทเค็นการรีเบสเข้ากันไม่ได้กับ Swapbay"
 
 #: src/components/Badge/RangeBadge.tsx
 msgid "The price of this pool is outside of your selected range. Your position is not currently earning fees."
@@ -1586,12 +1586,12 @@ msgstr "โทเค็นเหล่านี้มักจะจับคู
 
 #: src/components/NetworkAlert/AddLiquidityNetworkAlert.tsx
 #: src/components/NetworkAlert/MinimalNetworkAlert.tsx
-msgid "This is an alpha release of Uniswap on the {0} network."
-msgstr "นี่เป็นรุ่นอัลฟ่าของ Uniswap บนเครือข่าย {0}"
+msgid "This is an alpha release of Swapbay on the {0} network."
+msgstr "นี่เป็นรุ่นอัลฟ่าของ Swapbay บนเครือข่าย {0}"
 
 #: src/components/NetworkAlert/NetworkAlert.tsx
-msgid "This is an alpha release of Uniswap on the {0} network. You must bridge L1 assets to the network to swap them."
-msgstr "นี่เป็นรุ่นอัลฟ่าของ Uniswap บนเครือข่าย {0} คุณต้องเชื่อมโยงสินทรัพย์ L1 กับเครือข่ายเพื่อสลับ"
+msgid "This is an alpha release of Swapbay on the {0} network. You must bridge L1 assets to the network to swap them."
+msgstr "นี่เป็นรุ่นอัลฟ่าของ Swapbay บนเครือข่าย {0} คุณต้องเชื่อมโยงสินทรัพย์ L1 กับเครือข่ายเพื่อสลับ"
 
 #: src/pages/AddLiquidity/index.tsx
 msgid "This pool must be initialized before you can add liquidity. To initialize, select a starting price for the pool. Then, enter your liquidity price range and deposit amount. Gas fees will be higher than usual due to the initialization transaction."
@@ -1606,12 +1606,12 @@ msgid "This token doesn't appear on the active token list(s). Make sure this is 
 msgstr "โทเค็นนี้ไม่ปรากฏในรายการโทเค็นที่ใช้งานอยู่ ตรวจสอบให้แน่ใจว่านี่คือโทเค็นที่คุณต้องการซื้อขาย"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "This tool will safely migrate your {0} liquidity to V3. The process is completely trustless thanks to the"
-msgstr "เครื่องมือนี้จะย้าย {0} ของคุณไปยัง V3 อย่างปลอดภัย กระบวนการนี้ไม่น่าเชื่อถืออย่างสมบูรณ์ต้องขอบคุณ"
+msgid "This tool will safely migrate your {0} liquidity to. The process is completely trustless thanks to the"
+msgstr "เครื่องมือนี้จะย้าย {0} ของคุณไปยัง อย่างปลอดภัย กระบวนการนี้ไม่น่าเชื่อถืออย่างสมบูรณ์ต้องขอบคุณ"
 
 #: src/hooks/useSwapCallback.ts
-msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "ธุรกรรมนี้จะไม่สำเร็จเนื่องจากการเคลื่อนไหวของราคา ลองเพิ่มความทนทานต่อการเลื่อนหลุด หมายเหตุ: ค่าธรรมเนียมการโอนและโทเค็นการรีเบสเข้ากันไม่ได้กับ Uniswap V3"
+msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Swapbay."
+msgstr "ธุรกรรมนี้จะไม่สำเร็จเนื่องจากการเคลื่อนไหวของราคา ลองเพิ่มความทนทานต่อการเลื่อนหลุด หมายเหตุ: ค่าธรรมเนียมการโอนและโทเค็นการรีเบสเข้ากันไม่ได้กับ Swapbay"
 
 #: src/hooks/useSwapCallback.ts
 msgid "This transaction will not succeed either due to price movement or fee on transfer. Try increasing your slippage tolerance."
@@ -1696,37 +1696,37 @@ msgid "Turn On Expert Mode"
 msgstr "เปิดโหมดผู้เชี่ยวชาญ"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "UNI has arrived"
-msgstr "UNI มาแล้วจ้า"
+msgid "has arrived"
+msgstr "มาแล้วจ้า"
 
 #: src/components/Header/UniBalanceContent.tsx
-msgid "UNI in circulation:"
-msgstr "UNI หมุนเวียน:"
+msgid "in circulation:"
+msgstr "หมุนเวียน:"
 
 #: src/components/Header/UniBalanceContent.tsx
-msgid "UNI price:"
+msgid "price:"
 msgstr "ราคายูนิ:"
 
 #: src/pages/Vote/index.tsx
-msgid "UNI tokens represent voting shares in Uniswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
-msgstr "โทเค็นของ UNI เป็นตัวแทนของการลงคะแนนเสียงในการกำกับดูแล Uniswap คุณสามารถลงคะแนนในแต่ละข้อเสนอด้วยตัวเองหรือมอบสิทธิ์การโหวตของคุณให้กับบุคคลที่สาม"
+msgid "tokens represent voting shares in Swapbay governance. You can vote on each proposal yourself or delegate your votes to a third party."
+msgstr "โทเค็นของ เป็นตัวแทนของการลงคะแนนเสียงในการกำกับดูแล Swapbay คุณสามารถลงคะแนนในแต่ละข้อเสนอด้วยตัวเองหรือมอบสิทธิ์การโหวตของคุณให้กับบุคคลที่สาม"
 
 #: src/pages/RemoveLiquidity/index.tsx
-msgid "UNI {0}/{1} Burned"
-msgstr "UNI {0}/{1} เผา"
+msgid "{0}/{1} Burned"
+msgstr "{0}/{1} เผา"
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 LP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
-msgstr "ต้องใช้โทเค็น UNI-V2 LP เมื่อคุณเพิ่มสภาพคล่องให้กับกลุ่ม {0}-{1} คุณสามารถเดิมพันโทเค็นสภาพคล่องของคุณในหน้านี้"
+msgid "LP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
+msgstr "ต้องใช้โทเค็น-LP เมื่อคุณเพิ่มสภาพคล่องให้กับกลุ่ม {0}-{1} คุณสามารถเดิมพันโทเค็นสภาพคล่องของคุณในหน้านี้"
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 {0}-{1}"
-msgstr "UNI-V2 {0}-{1}"
+msgid "{0}-{1}"
+msgstr "{0}-{1}"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Unclaimed UNI"
-msgstr "UNI . ที่ไม่มีการอ้างสิทธิ์"
+msgid "Unclaimed"
+msgstr ". ที่ไม่มีการอ้างสิทธิ์"
 
 #: src/pages/Pool/PositionPage.tsx
 msgid "Unclaimed fees"
@@ -1741,36 +1741,36 @@ msgid "Undetermined"
 msgstr "ไม่แน่นอน"
 
 #: src/pages/Vote/index.tsx
-msgid "Uniswap Governance"
-msgstr "การกำกับดูแล Uniswap"
+msgid "Swapbay Governance"
+msgstr "การกำกับดูแล Swapbay"
 
 #: src/components/SwitchLocaleLink/index.tsx
-msgid "Uniswap available in: <0>{0}</0>"
-msgstr "Uniswap มีให้ใน: <0>{0}</0>"
+msgid "Swapbay available in: <0>{0}</0>"
+msgstr "Swapbay มีให้ใน: <0>{0}</0>"
 
 #: src/components/vote/ProposalEmptyState.tsx
-msgid "Uniswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
-msgstr "การกำกับดูแล Uniswap ใช้ได้เฉพาะในเลเยอร์ 1 เท่านั้น เปลี่ยนเครือข่ายของคุณเป็น Ethereum Mainnet เพื่อดูข้อเสนอและการโหวต"
+msgid "Swapbay governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
+msgstr "การกำกับดูแล Swapbay ใช้ได้เฉพาะในเลเยอร์ 1 เท่านั้น เปลี่ยนเครือข่ายของคุณเป็น Ethereum Mainnet เพื่อดูข้อเสนอและการโหวต"
 
 #: src/pages/Earn/index.tsx
-msgid "Uniswap liquidity mining"
-msgstr "การขุดสภาพคล่อง Uniswap"
+msgid "Swapbay liquidity mining"
+msgstr "การขุดสภาพคล่อง Swapbay"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "Uniswap migration contract↗"
-msgstr "สัญญาการโยกย้าย Uniswap↗"
+msgid "Swapbay migration contract↗"
+msgstr "สัญญาการโยกย้าย Swapbay↗"
 
 #: src/components/NetworkAlert/NetworkAlert.tsx
-msgid "Uniswap on {0}"
-msgstr "Uniswap บน {0}"
+msgid "Swapbay on {0}"
+msgstr "Swapbay บน {0}"
 
 #: src/components/SearchModal/ImportToken.tsx
 msgid "Unknown Source"
 msgstr "ไม่ทราบแหล่งที่มา"
 
 #: src/hooks/useSwapCallback.ts
-msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "ข้อผิดพลาดที่ไม่รู้จัก{0}ลองเพิ่มความทนทานต่อการเลื่อนหลุด หมายเหตุ: ค่าธรรมเนียมการโอนและโทเค็นการรีเบสเข้ากันไม่ได้กับ Uniswap V3"
+msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Swapbay."
+msgstr "ข้อผิดพลาดที่ไม่รู้จัก{0}ลองเพิ่มความทนทานต่อการเลื่อนหลุด หมายเหตุ: ค่าธรรมเนียมการโอนและโทเค็นการรีเบสเข้ากันไม่ได้กับ Swapbay"
 
 #: src/pages/Vote/VotePage.tsx
 #: src/pages/Vote/index.tsx
@@ -1816,29 +1816,29 @@ msgid "User"
 msgstr "ผู้ใช้"
 
 #: src/pages/Pool/v2.tsx
-msgid "V2 is not available on Layer 2. Switch to Layer 1 Ethereum."
-msgstr "V2 ไม่พร้อมใช้งานใน Layer 2 เปลี่ยนเป็น Layer 1 Ethereum"
+msgid "is not available on Layer 2. Switch to Layer 1 Ethereum."
+msgstr "ไม่พร้อมใช้งานใน Layer 2 เปลี่ยนเป็น Layer 1 Ethereum"
 
 #: src/pages/Pool/index.tsx
-msgid "V2 liquidity"
-msgstr "สภาพคล่อง V2"
+msgid "liquidity"
+msgstr "สภาพคล่อง"
 
 #: src/pages/Swap/index.tsx
-msgid "V3"
-msgstr "V3"
+msgid 
+msgstr 
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "V3 {0} Price:"
-msgstr "V3 {0} ราคา:"
+msgid "{0} Price:"
+msgstr "{0} ราคา:"
 
 #: src/components/Header/UniBalanceContent.tsx
-msgid "View UNI Analytics"
-msgstr "ดู UNI Analytics"
+msgid "View Analytics"
+msgstr "ดู Analytics"
 
 #: src/pages/Pool/index.tsx
-msgid "View V2 Liquidity"
-msgstr "ดูสภาพคล่อง V2"
+msgid "View Liquidity"
+msgstr "ดูสภาพคล่อง"
 
 #: src/components/PositionCard/index.tsx
 msgid "View accrued fees and analytics<0>↗</0>"
@@ -1914,7 +1914,7 @@ msgid "Weekly Rewards"
 msgstr "รางวัลประจำสัปดาห์"
 
 #: src/components/claim/AddressClaimModal.tsx
-msgid "Welcome to team Unicorn :)"
+msgid "Welcome to teamcorn :)"
 msgstr "ยินดีต้อนรับสู่ทีมยูนิคอร์น :)"
 
 #: src/components/earn/ClaimRewardModal.tsx
@@ -1922,12 +1922,12 @@ msgid "When you claim without withdrawing your liquidity remains in the mining p
 msgstr "เมื่อคุณอ้างสิทธิ์โดยไม่ถอนสภาพคล่องของคุณจะยังคงอยู่ในกลุ่มการขุด"
 
 #: src/pages/Earn/Manage.tsx
-msgid "When you withdraw, the contract will automagically claim UNI on your behalf!"
-msgstr "เมื่อคุณถอนตัว สัญญาจะอ้างสิทธิ์ UNI ในนามของคุณโดยอัตโนมัติ!"
+msgid "When you withdraw, the contract will automagically claim on your behalf!"
+msgstr "เมื่อคุณถอนตัว สัญญาจะอ้างสิทธิ์ ในนามของคุณโดยอัตโนมัติ!"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "When you withdraw, your UNI is claimed and your liquidity is removed from the mining pool."
-msgstr "เมื่อคุณถอนออก UNI ของคุณจะถูกอ้างสิทธิ์และสภาพคล่องของคุณจะถูกลบออกจากกลุ่มการขุด"
+msgid "When you withdraw, your is claimed and your liquidity is removed from the mining pool."
+msgstr "เมื่อคุณถอนออก ของคุณจะถูกอ้างสิทธิ์และสภาพคล่องของคุณจะถูกลบออกจากกลุ่มการขุด"
 
 #: src/components/earn/UnstakingModal.tsx
 #: src/pages/Earn/Manage.tsx
@@ -1944,12 +1944,12 @@ msgid "Withdraw deposited liquidity"
 msgstr "ถอนเงินที่ฝากไว้"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrawing {0} UNI-V2"
-msgstr "ถอน {0} UNI-V2"
+msgid "Withdrawing {0}"
+msgstr "ถอน {0}"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrew UNI-V2!"
-msgstr "ถอนตัว UNI-V2!"
+msgid "Withdrew!"
+msgstr "ถอนตัว!"
 
 #: src/pages/Swap/index.tsx
 msgid "Wrap"
@@ -1969,8 +1969,8 @@ msgid "You are creating a pool"
 msgstr "คุณกำลังสร้างพูล"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You are the first liquidity provider for this Uniswap V3 pool. Your liquidity will migrate at the current {0} price."
-msgstr "คุณเป็นผู้ให้บริการสภาพคล่องรายแรกสำหรับกลุ่ม Uniswap V3 นี้ สภาพคล่องของคุณจะถูกย้ายที่ราคา {0}"
+msgid "You are the first liquidity provider for this Swapbay pool. Your liquidity will migrate at the current {0} price."
+msgstr "คุณเป็นผู้ให้บริการสภาพคล่องรายแรกสำหรับกลุ่ม Swapbay นี้ สภาพคล่องของคุณจะถูกย้ายที่ราคา {0}"
 
 #: src/pages/AddLiquidityV2/index.tsx
 msgid "You are the first liquidity provider."
@@ -2006,16 +2006,16 @@ msgid "You must connect an account."
 msgstr "คุณต้องเชื่อมต่อบัญชี"
 
 #: src/pages/Swap/index.tsx
-msgid "You must give the Uniswap smart contracts permission to use your {0}. You only have to do this once per token."
-msgstr "คุณต้องให้สิทธิ์สัญญาอัจฉริยะ Uniswap เพื่อใช้ {0}คุณต้องทำเช่นนี้เพียงครั้งเดียวต่อโทเค็น"
+msgid "You must give the Swapbay smart contracts permission to use your {0}. You only have to do this once per token."
+msgstr "คุณต้องให้สิทธิ์สัญญาอัจฉริยะ Swapbay เพื่อใช้ {0}คุณต้องทำเช่นนี้เพียงครั้งเดียวต่อโทเค็น"
 
 #: src/pages/CreateProposal/index.tsx
 msgid "You must have {formattedProposalThreshold} votes to submit a proposal"
 msgstr "คุณต้องมี {formattedProposalThreshold} โหวตเพื่อส่งข้อเสนอ"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You should only deposit liquidity into Uniswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
-msgstr "คุณควรฝากสภาพคล่องเข้า Uniswap V3 ในราคาที่คุณเชื่อว่าถูกต้องเท่านั้น <0/>หากราคาดูเหมือนไม่ถูกต้อง คุณสามารถทำการแลกเปลี่ยนเพื่อย้ายราคาหรือรอให้คนอื่นทำ"
+msgid "You should only deposit liquidity into Swapbay at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
+msgstr "คุณควรฝากสภาพคล่องเข้า Swapbay ในราคาที่คุณเชื่อว่าถูกต้องเท่านั้น <0/>หากราคาดูเหมือนไม่ถูกต้อง คุณสามารถทำการแลกเปลี่ยนเพื่อย้ายราคาหรือรอให้คนอื่นทำ"
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "You will also collect fees earned from this position."
@@ -2027,16 +2027,16 @@ msgid "You will receive"
 msgstr "คุณจะได้รับ"
 
 #: src/components/Header/UniBalanceContent.tsx
-msgid "Your UNI Breakdown"
-msgstr "รายละเอียด UNI ของคุณ"
+msgid "Your Breakdown"
+msgstr "รายละเอียด ของคุณ"
 
 #: src/pages/Pool/v2.tsx
-msgid "Your V2 liquidity"
-msgstr "สภาพคล่อง V2 ของคุณ"
+msgid "Your liquidity"
+msgstr "สภาพคล่อง ของคุณ"
 
 #: src/pages/Pool/index.tsx
-msgid "Your V3 liquidity positions will appear here."
-msgstr "ตำแหน่งสภาพคล่อง V3 ของคุณจะปรากฏที่นี่"
+msgid "Your liquidity positions will appear here."
+msgstr "ตำแหน่งสภาพคล่อง ของคุณจะปรากฏที่นี่"
 
 #: src/pages/Earn/Manage.tsx
 msgid "Your liquidity deposits"
@@ -2114,8 +2114,8 @@ msgid "Your transactions will appear here..."
 msgstr "ธุรกรรมของคุณจะปรากฏที่นี่..."
 
 #: src/pages/Earn/Manage.tsx
-msgid "Your unclaimed UNI"
-msgstr "UNI . ที่ไม่มีการอ้างสิทธิ์ของคุณ"
+msgid "Your unclaimed"
+msgstr ". ที่ไม่มีการอ้างสิทธิ์ของคุณ"
 
 #: src/components/Settings/index.tsx
 msgid "confirm"
@@ -2207,24 +2207,24 @@ msgstr "{0} รอดำเนินการ"
 #: src/components/claim/ClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
-msgid "{0} UNI"
-msgstr "{0} UNI"
+msgid "{0}"
+msgstr "{0}"
 
 #: src/components/earn/PoolCard.tsx
 #: src/components/earn/PoolCard.tsx
 #: src/components/earn/StakingModal.tsx
 #: src/pages/Earn/Manage.tsx
 #: src/pages/Earn/Manage.tsx
-msgid "{0} UNI / week"
-msgstr "{0} UNI / สัปดาห์"
+msgid "{0} / week"
+msgstr "{0} / สัปดาห์"
 
 #: src/components/earn/StakingModal.tsx
-msgid "{0} UNI-V2"
-msgstr "{0} UNI-V2"
+msgid "{0}"
+msgstr "{0}"
 
 #: src/pages/Earn/Manage.tsx
-msgid "{0} UNI-V2 LP tokens available"
-msgstr "{0} โทเค็น LP UNI-V2 พร้อมใช้งาน"
+msgid "{0}-LP tokens available"
+msgstr "{0} โทเค็น LP-พร้อมใช้งาน"
 
 #: src/components/vote/VoteModal.tsx
 msgid "{0} Votes"
@@ -2287,12 +2287,12 @@ msgid "{0}/{1} LP Tokens"
 msgstr "{0}/{1} LP Tokens"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "{SOCKS_AMOUNT} UNI"
-msgstr "{SOCKS_AMOUNT} UNI"
+msgid "{SOCKS_AMOUNT}"
+msgstr "{SOCKS_AMOUNT}"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "{USER_AMOUNT} UNI"
-msgstr "{USER_AMOUNT} UNI"
+msgid "{USER_AMOUNT}"
+msgstr "{USER_AMOUNT}"
 
 #: src/components/SearchModal/ManageLists.tsx
 msgid "{activeTokensOnThisChain} tokens"
