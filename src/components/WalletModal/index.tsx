@@ -233,7 +233,7 @@ export default function WalletModal({
       }
 
       if (option.connector === clvConnector) {
-        if (!(window.web3 || windowObj.clover)) {
+        if (!(window.web3 || windowObj.clover) || !windowObj.clover) {
           if (option.name === 'Clover') {
             return (
               <Option
@@ -259,7 +259,7 @@ export default function WalletModal({
       // overwrite injected when needed
       if (option.connector === injected) {
         // don't show injected if there's no injected provider
-        if (!(window.web3 || window.ethereum)) {
+        if (!(window.web3 || window.ethereum) || !isMetamask) {
           if (option.name === 'MetaMask') {
             return (
               <Option
