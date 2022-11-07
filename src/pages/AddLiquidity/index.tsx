@@ -68,7 +68,6 @@ import RateToggle from 'components/RateToggle'
 import { BigNumber } from '@ethersproject/bignumber'
 import { AddRemoveTabs } from 'components/NavigationTabs'
 import HoverInlineText from 'components/HoverInlineText'
-import { SwitchLocaleLink } from 'components/SwitchLocaleLink'
 import LiquidityChartRangeInput from 'components/LiquidityChartRangeInput'
 import { SupportedChainId } from 'constants/chains'
 import OptimismDowntimeWarning from 'components/OptimismDowntimeWarning'
@@ -976,7 +975,6 @@ export default function AddLiquidity({
           />
         )}
       </ScrollablePage>
-      <SwitchLocaleLink />
     </>
   )
 }

@@ -16,7 +16,6 @@ import { Dots } from '../../components/swap/styleds'
 import { toV2LiquidityToken, useTrackedTokenPairs } from '../../state/user/hooks'
 import MigrateV2PositionCard from 'components/PositionCard/V2'
 import MigrateSushiPositionCard from 'components/PositionCard/Sushi'
-import { SwitchLocaleLink } from 'components/SwitchLocaleLink'
 import { PairState, useV2Pairs } from 'hooks/useV2Pairs'
 import { getCreate2Address } from '@ethersproject/address'
 import { pack, keccak256 } from '@ethersproject/solidity'
@@ -180,7 +179,6 @@ export default function MigrateV2() {
           </AutoColumn>
         </AutoColumn>
       </BodyWrapper>
-      <SwitchLocaleLink />
     </>
   )
 }

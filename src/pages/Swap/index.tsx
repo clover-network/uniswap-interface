@@ -28,7 +28,6 @@ import ConfirmSwapModal from '../../components/swap/ConfirmSwapModal'
 import { ArrowWrapper, Dots, SwapCallbackError, Wrapper } from '../../components/swap/styleds'
 import SwapHeader from '../../components/swap/SwapHeader'
 import TradePrice from '../../components/swap/TradePrice'
-import { SwitchLocaleLink } from '../../components/SwitchLocaleLink'
 import TokenWarningModal from '../../components/TokenWarningModal'
 import { useAllTokens, useCurrency } from '../../hooks/Tokens'
 import { ApprovalState, useApproveCallbackFromTrade } from '../../hooks/useApproveCallback'
@@ -462,15 +461,7 @@ export default function Swap({ history }: RouteComponentProps) {
                             lineHeight: '120%',
                             marginLeft: '0.75rem',
                           }}
-                        >
-                          <ArrowLeft color={theme.text3} size={12} /> &nbsp;
-                          <TYPE.main style={{ lineHeight: '120%' }} fontSize={12}>
-                            <Trans>
-                              <HideSmall>Back to </HideSmall>
-                              V3
-                            </Trans>
-                          </TYPE.main>
-                        </ButtonGray>
+                        />
                       )
                     ))}
 
@@ -665,7 +656,6 @@ export default function Swap({ history }: RouteComponentProps) {
           </AutoColumn>
         </Wrapper>
       </AppBody>
-      <SwitchLocaleLink />
       {!swapIsUnsupported ? null : (
         <UnsupportedCurrencyFooter
           show={swapIsUnsupported}

@@ -42,7 +42,6 @@ import { ConfirmAddModalBottom } from './ConfirmAddModalBottom'
 import { currencyId } from '../../utils/currencyId'
 import { PoolPriceBar } from './PoolPriceBar'
 import UnsupportedCurrencyFooter from 'components/swap/UnsupportedCurrencyFooter'
-import { SwitchLocaleLink } from 'components/SwitchLocaleLink'
 import { t, Trans } from '@lingui/macro'
 import ChangeIcon from '../../assets/svg/change_icon.svg'
 import { ArrowWrapper } from '../../components/swap/styleds'
@@ -500,7 +499,6 @@ export default function AddLiquidity({
           </AutoColumn>
         </Wrapper>
       </AppBody>
-      <SwitchLocaleLink />
 
       {!addIsUnsupported ? (
         pair && !noLiquidity && pairState !== PairState.INVALID ? (

@@ -5,7 +5,6 @@ import { FlyoutAlignment, NewMenu } from 'components/Menu'
 import { SwapPoolTabs } from 'components/NavigationTabs'
 import PositionList from 'components/PositionList'
 import { RowBetween, RowFixed } from 'components/Row'
-import { SwitchLocaleLink } from 'components/SwitchLocaleLink'
 import { L2_CHAIN_IDS } from 'constants/chains'
 import { useV3Positions } from 'hooks/useV3Positions'
 import { useActiveWeb3React } from 'hooks/web3'
@@ -170,7 +169,7 @@ export default function Pool() {
     {
       content: (
         <MenuItem>
-          <Trans>V2 liquidity</Trans>
+          <Trans>Liquidity</Trans>
           <Layers size={16} />
         </MenuItem>
       ),
@@ -276,7 +275,7 @@ export default function Pool() {
                   >
                     <Layers size={14} style={{ marginRight: '8px' }} />
 
-                    <Trans>View V2 Liquidity</Trans>
+                    <Trans>View Liquidity</Trans>
                   </ButtonOutlined>
                   {positions && positions.length > 0 && (
                     <ButtonOutlined
@@ -316,7 +315,6 @@ export default function Pool() {
           </AutoColumn>
         </AutoColumn>
       </PageWrapper>
-      <SwitchLocaleLink />
     </>
   )
 }

@@ -14,7 +14,6 @@ import { GreyCard } from '../../components/Card'
 import { AutoColumn } from '../../components/Column'
 import { CardSection, DataCard } from '../../components/earn/styled'
 import { RowBetween, RowFixed } from '../../components/Row'
-import { SwitchLocaleLink } from '../../components/SwitchLocaleLink'
 import DelegateModal from '../../components/vote/DelegateModal'
 import VoteModal from '../../components/vote/VoteModal'
 import {
@@ -359,7 +358,6 @@ export default function VotePage({
           </AutoColumn>
         </ProposalInfo>
       </PageWrapper>
-      <SwitchLocaleLink />
     </>
   )
 }

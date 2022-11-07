@@ -11,7 +11,6 @@ import { FindPoolTabs } from '../../components/NavigationTabs'
 import { MinimalPositionCard } from '../../components/PositionCard'
 import Row from '../../components/Row'
 import CurrencySearchModal from '../../components/SearchModal/CurrencySearchModal'
-import { SwitchLocaleLink } from '../../components/SwitchLocaleLink'
 import { ExtendedEther } from '../../constants/tokens'
 import { PairState, useV2Pair } from '../../hooks/useV2Pairs'
 import { useActiveWeb3React } from '../../hooks/web3'
@@ -87,7 +86,7 @@ export default function PoolFinder() {
         {!account ? (
           <Trans>Connect to a wallet to find pools</Trans>
         ) : (
-          <Trans>Select a token to find your v2 liquidity.</Trans>
+          <Trans>Select a token to find your liquidity.</Trans>
         )}
       </Text>
     </LightCard>
@@ -102,7 +101,7 @@ export default function PoolFinder() {
             <AutoColumn gap="10px">
               <TYPE.link fontWeight={400} color={'primaryText2'}>
                 <Trans>
-                  <b>Tip:</b> Use this tool to find v2 pools that don&apos;t automatically appear in the interface.
+                  <b>Tip:</b> Use this tool to find pools that don&apos;t automatically appear in the interface.
                 </Trans>
               </TYPE.link>
             </AutoColumn>
@@ -228,7 +227,6 @@ export default function PoolFinder() {
           selectedCurrency={(activeField === Fields.TOKEN0 ? currency1 : currency0) ?? undefined}
         />
       </AppBody>
-      <SwitchLocaleLink />
     </>
   )
 }

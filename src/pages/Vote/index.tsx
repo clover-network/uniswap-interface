@@ -12,7 +12,6 @@ import { CardBGImage, CardNoise, CardSection, DataCard } from 'components/earn/s
 import FormattedCurrencyAmount from 'components/FormattedCurrencyAmount'
 import Loader from 'components/Loader'
 import { AutoRow, RowBetween, RowFixed } from 'components/Row'
-import { SwitchLocaleLink } from 'components/SwitchLocaleLink'
 import DelegateModal from 'components/vote/DelegateModal'
 import { ZERO_ADDRESS } from '../../constants/misc'
 import { UNI } from '../../constants/tokens'
@@ -250,7 +249,6 @@ export default function Vote() {
           <Trans>A minimum threshold of 0.25% of the total UNI supply is required to submit proposals</Trans>
         </TYPE.subHeader>
       </PageWrapper>
-      <SwitchLocaleLink />
     </>
   )
 }
