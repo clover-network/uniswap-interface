@@ -12,6 +12,7 @@ import WalletConnectIcon from '../../assets/images/walletConnectIcon.svg'
 import {
   changeWalletNetwork,
   CLOVER_PARACHAIN_NETWORK_EVM,
+  clvConnector,
   fortmatic,
   injected,
   portis,
@@ -231,8 +232,13 @@ export default function Web3Status() {
   const { active, account, connector, activate, chainId } = useWeb3React()
 
   useEffect(() => {
+    const windowObj: any = window
     if (active && connector && chainId !== parseInt(CLOVER_PARACHAIN_NETWORK_EVM.chainId)) {
-      changeWalletNetwork(window.ethereum, CLOVER_PARACHAIN_NETWORK_EVM).then((ret) => {
+      let provider = windowObj.ethereum
+      if (connector === clvConnector && windowObj.clover) {
+        provider = windowObj.clover
+      }
+      changeWalletNetwork(provider, CLOVER_PARACHAIN_NETWORK_EVM).then((ret) => {
         activate(connector)
       })
     }
