@@ -47,7 +47,7 @@ export const injected = new InjectedConnector({
   supportedChainIds: ALL_SUPPORTED_CHAIN_IDS,
 })
 
-const SUPPORTED_CHAINIDS = [1, 3, 4, 56, 97, 1023, 1024]
+const SUPPORTED_CHAINIDS = [1, 3, 4, 1024]
 export const clvConnector = new CloverConnector({ supportedChainIds: SUPPORTED_CHAINIDS })
 
 export const gnosisSafe = new SafeAppConnector()

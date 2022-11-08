@@ -8,7 +8,14 @@ import ReactGA from 'react-ga'
 import styled from 'styled-components/macro'
 import MetamaskIcon from '../../assets/images/metamask.png'
 import { ReactComponent as Close } from '../../assets/images/x.svg'
-import { clvConnector, fortmatic, injected, portis } from '../../connectors'
+import {
+  changeWalletNetwork,
+  CLOVER_PARACHAIN_NETWORK_EVM,
+  clvConnector,
+  fortmatic,
+  injected,
+  portis,
+} from '../../connectors'
 import { OVERLAY_READY } from '../../connectors/Fortmatic'
 import { SUPPORTED_WALLETS } from '../../constants/wallet'
 import usePrevious from '../../hooks/usePrevious'
@@ -184,8 +191,16 @@ export default function WalletModal({
 
     connector &&
       activate(connector, undefined, true).catch((error) => {
+        const windowObj: any = window
         if (error instanceof UnsupportedChainIdError) {
-          activate(connector) // a little janky...can't use setError because the connector isn't set
+          let provider = windowObj.ethereum
+          if (connector === clvConnector && windowObj.clover) {
+            provider = windowObj.clover
+          }
+          changeWalletNetwork(provider, CLOVER_PARACHAIN_NETWORK_EVM).then((ret) => {
+            activate(connector)
+          })
+          // activate(connector) // a little janky...can't use setError because the connector isn't set
         } else {
           setPendingError(true)
         }

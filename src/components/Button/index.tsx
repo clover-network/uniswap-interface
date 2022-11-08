@@ -191,6 +191,7 @@ export const ButtonEmpty = styled(Base)`
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
 
   &:focus {
     text-decoration: underline;
