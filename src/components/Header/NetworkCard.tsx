@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { YellowCard } from 'components/Card'
+import Card from 'components/Card'
 import { useOnClickOutside } from 'hooks/useOnClickOutside'
 import { useActiveWeb3React } from 'hooks/web3'
 import { useEffect, useRef, useState } from 'react'
@@ -10,6 +10,7 @@ import styled, { css } from 'styled-components/macro'
 import { ExternalLink } from 'theme'
 import { switchToNetwork } from 'utils/switchToNetwork'
 import { CHAIN_INFO, L2_CHAIN_IDS, SupportedChainId, SupportedL2ChainId } from '../../constants/chains'
+import ClvTokenLogo from '../../assets/images/CLV_token.svg'
 
 const BaseWrapper = css`
   position: relative;
@@ -60,13 +61,21 @@ const DisabledMenuItem = styled.div`
     color: ${({ theme }) => theme.text2};
   }
 `
-const FallbackWrapper = styled(YellowCard)`
+const FallbackWrapper = styled(Card)`
   ${BaseWrapper}
   width: auto;
   border-radius: 12px;
   padding: 8px 12px;
   width: 100%;
   user-select: none;
+  background-color: ${({ theme }) => theme.bg4};
+  display: flex;
+  align-items: center;
+  img {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+  }
 `
 const Icon = styled.img`
   width: 16px;
@@ -231,5 +240,10 @@ export default function NetworkCard() {
     )
   }
 
-  return <FallbackWrapper title={info.label}>{info.label}</FallbackWrapper>
+  return (
+    <FallbackWrapper title={info.label}>
+      {info.label === 'CLV' && <img src={ClvTokenLogo} alt="" />}
+      {info.label === 'CLV' ? 'CLV P-Chain' : info.label}
+    </FallbackWrapper>
+  )
 }
