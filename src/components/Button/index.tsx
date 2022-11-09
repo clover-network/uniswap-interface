@@ -62,7 +62,7 @@ export const ButtonPrimary = styled(Base)`
   }
   &:active {
     box-shadow: 0 0 0 1pt ${({ theme }) => darken(0.1, theme.primary8)};
-    background: ${({ theme }) => darken(0.1, theme.primary1)};
+    background: ${({ theme }) => darken(0.1, theme.primary8)};
   }
   &:disabled {
     background: ${({ theme, altDisabledStyle, disabled }) =>
