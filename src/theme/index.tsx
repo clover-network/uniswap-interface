@@ -67,12 +67,14 @@ function colors(darkMode: boolean): Colors {
     advancedBG: darkMode ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.6)',
 
     //primary colors
-    primary1: darkMode ? '#23CD53' : '#E8006F',
+    primary1: darkMode ? 'linear-gradient(238.81deg, #08F6A0 0%, #00D1FF 100%)' : '#E8006F',
     primary2: darkMode ? '#3680E7' : '#FF8CC3',
     primary3: darkMode ? '#4D8FEA' : '#FF99C9',
     primary4: darkMode ? '#376bad70' : '#F6DDE8',
-    primary5: darkMode ? '#23CD53' : '#FDEAF1',
+    primary5: darkMode ? 'linear-gradient(238.81deg, #08F6A0 0%, #00D1FF 100%)' : '#FDEAF1',
     primary6: darkMode ? '#FFFFFF' : '#E8006F',
+    primary7: darkMode ? '#153d6f70' : '#FDEAF1',
+    primary8: darkMode ? '#2172E5' : '#E8006F',
 
     // color text
     primaryText1: darkMode ? '#050603' : '#D50066',

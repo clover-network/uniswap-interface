@@ -75,7 +75,7 @@ const WrapSmall = styled(RowBetween)`
 `
 
 const TextButton = styled(TYPE.main)`
-  color: ${({ theme }) => theme.primary1};
+  color: ${({ theme }) => theme.primary6};
   :hover {
     cursor: pointer;
     text-decoration: underline;

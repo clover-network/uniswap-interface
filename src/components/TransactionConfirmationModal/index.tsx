@@ -42,7 +42,7 @@ const BottomSection = styled(Section)`
   margin-left: -16px;
   margin-bottom: -16px;
   padding: 16px;
-  color: ${({ theme }) => theme.primary1};
+  color: ${({ theme }) => theme.primary6};
 `
 
 const ConfirmedIcon = styled(ColumnCenter)<{ inline?: boolean }>`
@@ -123,12 +123,12 @@ function TransactionSubmittedContent({
           </Header>
         )}
         <ConfirmedIcon inline={inline}>
-          <ArrowUpCircle strokeWidth={0.5} size={inline ? '40px' : '90px'} color={theme.primary1} />
+          <ArrowUpCircle strokeWidth={0.5} size={inline ? '40px' : '90px'} color={theme.primary8} />
         </ConfirmedIcon>
         <AutoColumn gap="12px" justify={'center'}>
           {chainId && hash && (
             <ExternalLink href={getExplorerLink(chainId, hash, ExplorerDataType.TRANSACTION)}>
-              <Text fontWeight={500} fontSize={14} color={theme.primary1}>
+              <Text fontWeight={500} fontSize={14} color={theme.primary8}>
                 <Trans>View on Explorer</Trans>
               </Text>
             </ExternalLink>
@@ -292,7 +292,7 @@ function L2Content({
           </Text>
           {chainId && hash ? (
             <ExternalLink href={getExplorerLink(chainId, hash, ExplorerDataType.TRANSACTION)}>
-              <Text fontWeight={500} fontSize={14} color={theme.primary1}>
+              <Text fontWeight={500} fontSize={14} color={theme.primary8}>
                 <Trans>View on Explorer</Trans>
               </Text>
             </ExternalLink>

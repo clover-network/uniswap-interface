@@ -36,7 +36,7 @@ const FancyButton = styled.button`
     border: 1px solid ${({ theme }) => theme.bg4};
   }
   :focus {
-    border: 1px solid ${({ theme }) => theme.primary1};
+    border: 1px solid ${({ theme }) => theme.primary8};
   }
 `
 
@@ -45,7 +45,7 @@ const Option = styled(FancyButton)<{ active: boolean }>`
   :hover {
     cursor: pointer;
   }
-  background-color: ${({ active, theme }) => active && theme.primary1};
+  background: ${({ active, theme }) => active && theme.primary1};
   color: ${({ active, theme }) => (active ? theme.white : theme.text1)};
 `
 
@@ -68,10 +68,10 @@ const OptionCustom = styled(FancyButton)<{ active?: boolean; warning?: boolean }
   padding: 0 0.75rem;
   flex: 1;
   border: ${({ theme, active, warning }) =>
-    active ? `1px solid ${warning ? theme.red1 : theme.primary1}` : warning && `1px solid ${theme.red1}`};
+    active ? `1px solid ${warning ? theme.red1 : theme.primary8}` : warning && `1px solid ${theme.red1}`};
   :hover {
     border: ${({ theme, active, warning }) =>
-      active && `1px solid ${warning ? darken(0.1, theme.red1) : darken(0.1, theme.primary1)}`};
+      active && `1px solid ${warning ? darken(0.1, theme.red1) : darken(0.1, theme.primary8)}`};
   }
 
   input {

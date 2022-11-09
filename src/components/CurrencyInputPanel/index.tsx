@@ -74,7 +74,7 @@ const CurrencySelect = styled(ButtonGray)<{ visible: boolean; selected: boolean;
   margin-left: ${({ hideInput }) => (hideInput ? '0' : '12px')};
   :focus,
   :hover {
-    //background-color: ${({ selected, theme }) => (selected ? theme.bg2 : darken(0.05, theme.primary1))};
+    //background-color: ${({ selected, theme }) => (selected ? theme.bg2 : darken(0.05, theme.primary8))};
   }
 `
 
@@ -131,7 +131,7 @@ const StyledBalanceMax = styled.button<{ disabled?: boolean }>`
   font-weight: 500;
   cursor: pointer;
   padding: 0;
-  color: ${({ theme }) => theme.primary1};
+  color: ${({ theme }) => theme.primary6};
   opacity: ${({ disabled }) => (!disabled ? 1 : 0.4)};
   pointer-events: ${({ disabled }) => (!disabled ? 'initial' : 'none')};
   margin-left: 0.25rem;
