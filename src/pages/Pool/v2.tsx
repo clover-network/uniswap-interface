@@ -24,6 +24,7 @@ import { BIG_INT_ZERO } from '../../constants/misc'
 import { Pair } from '@uniswap/v2-sdk'
 import { Trans } from '@lingui/macro'
 import { L2_CHAIN_IDS } from 'constants/chains'
+import uImage from '../../assets/images/big_unicorn.png'
 
 const PageWrapper = styled(AutoColumn)`
   max-width: 640px;
@@ -31,7 +32,8 @@ const PageWrapper = styled(AutoColumn)`
 `
 
 const VoteCard = styled(DataCard)`
-  background: radial-gradient(76.02% 75.41% at 1.84% 0%, #27ae60 0%, #000000 100%);
+  background: url(${uImage});
+  background-size: cover;
   overflow: hidden;
 `
 
@@ -151,8 +153,6 @@ export default function Pool() {
       <PageWrapper>
         <SwapPoolTabs active={'pool'} />
         <VoteCard>
-          <CardBGImage />
-          <CardNoise />
           <CardSection>
             <AutoColumn gap="md">
               <RowBetween>
@@ -179,8 +179,6 @@ export default function Pool() {
               {/*</ExternalLink>*/}
             </AutoColumn>
           </CardSection>
-          <CardBGImage />
-          <CardNoise />
         </VoteCard>
 
         {ON_L2 ? (
