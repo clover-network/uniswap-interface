@@ -71,6 +71,7 @@ const FallbackWrapper = styled(Card)`
   background-color: ${({ theme }) => theme.bg4};
   display: flex;
   align-items: center;
+  white-space: nowrap;
   img {
     width: 24px;
     height: 24px;
